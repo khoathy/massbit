@@ -57,11 +57,12 @@
 }
 
 .decor-right {
-    width: 9vw;
+    width: 50vw;
     position: absolute;
-    bottom: -10rem;
-    right: 2rem;
+    bottom: -15rem;
+    right: -2rem;
     transform-origin: bottom right;
+    transition: all 0.5s ease-out;
     @include respond(tab-land){bottom: -15rem;}
 }
 
