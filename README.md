@@ -1,2 +1,2 @@
 # massbit
-massbit landing page
+landing page for Massbit
