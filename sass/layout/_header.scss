@@ -1,6 +1,6 @@
 .header {
     position: relative;
-    height: 100vh;
+    height: 95vh;
     overflow: hidden;
 
     @include respond(phone) {
@@ -28,8 +28,8 @@
         max-width: 50rem;
         width: fit-content;
         position: absolute;
-        top: 33%;
-        left: 10%;
+        top: 35%;
+        left: 15%;
         transform: translateZ(0);
 
         @include respond(tab-port) {
@@ -56,10 +56,10 @@
     }
 
     &__display {
-        width: 37%;
+        width: 42%;
         position: absolute;
-        bottom: 10%;
-        right: 8%;
+        bottom: 3%;
+        right: 5%;
 
         @include respond(tab-land) {
             right: 5%;
@@ -94,11 +94,11 @@
     
     &__fore {
         position: absolute;
-        background-size: 62vw;
-        bottom: -12rem;
+        background-size: 14%;
+        bottom: -11rem;
         height: 100%;  
         width: 100%;
-        background-position : 100% 100%;
+        background-position : 50% 100%;
         background-image: url(../img/fore-bg.svg);
         image-rendering: crisp-edges;
         image-rendering: -moz-crisp-edges;          /* Firefox */

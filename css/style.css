@@ -41,9 +41,9 @@ html {
   background-color: #daeaff; }
 
 body {
-  font-family: 'Muli', sans-serif;
-  font-weight: 300;
-  font-size: 1.6rem;
+  font-family: 'Mulish', sans-serif;
+  font-weight: 400;
+  font-size: 1.8rem;
   letter-spacing: 0.03rem;
   line-height: 1.8;
   color: #505369;
@@ -99,15 +99,6 @@ body {
   @media only screen and (max-width: 37.5em) {
     .paragraph {
       width: 100%; } }
-
-.pricetag {
-  font-size: 1.4rem;
-  line-height: 1.4;
-  color: #fff; }
-
-.price {
-  font-size: 1.6rem;
-  font-weight: 500; }
 
 .card__title {
   font-size: 2rem;
@@ -339,7 +330,7 @@ input[type=submit]:active {
 
 .header {
   position: relative;
-  height: 100vh;
+  height: 95vh;
   overflow: hidden; }
   @media only screen and (max-width: 37.5em) {
     .header {
@@ -361,8 +352,8 @@ input[type=submit]:active {
     max-width: 50rem;
     width: fit-content;
     position: absolute;
-    top: 33%;
-    left: 10%;
+    top: 35%;
+    left: 15%;
     transform: translateZ(0); }
     @media only screen and (max-width: 56.25em) {
       .header__textbox {
@@ -381,10 +372,10 @@ input[type=submit]:active {
         .header__textbox-text {
           width: 85vw; } }
   .header__display {
-    width: 37%;
+    width: 42%;
     position: absolute;
-    bottom: 10%;
-    right: 8%; }
+    bottom: 3%;
+    right: 5%; }
     @media only screen and (max-width: 75em) {
       .header__display {
         right: 5%;
@@ -409,11 +400,11 @@ input[type=submit]:active {
         background-size: 100%; } }
   .header__fore {
     position: absolute;
-    background-size: 62vw;
-    bottom: -12rem;
+    background-size: 14%;
+    bottom: -11rem;
     height: 100%;
     width: 100%;
-    background-position: 100% 100%;
+    background-position: 50% 100%;
     background-image: url(../img/fore-bg.svg);
     image-rendering: crisp-edges;
     image-rendering: -moz-crisp-edges;

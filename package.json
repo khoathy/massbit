@@ -13,5 +13,13 @@
   "dependencies": {
     "jquery": "^3.3.1"
   },
-  "description": "landing page for Massbit"
+  "description": "landing page for Massbit",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/khoathy/massbit.git"
+  },
+  "bugs": {
+    "url": "https://github.com/khoathy/massbit/issues"
+  },
+  "homepage": "https://github.com/khoathy/massbit#readme"
 }
