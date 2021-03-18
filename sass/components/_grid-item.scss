@@ -3,14 +3,24 @@
         @include respond(phone){
             margin-bottom: 2.5rem;
         }
-    }    
+    }
 }
+
+
+.grid-item__wrapper {
+    margin: 1rem 4rem;
+    & img {
+        border-radius: 3rem;
+    }
+}
+
+
 .grid-figure {
     position: relative;
     transition: all 0.5s ease-in-out;
     overflow: hidden;
     cursor: pointer;
-    margin: 0.5rem;
+    margin: 2.5rem;
    
 
     figcaption {

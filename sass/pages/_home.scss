@@ -1,17 +1,17 @@
 .section-about,
 .section-products,
-.section-features,
+.section-team,
 .section-funding {
     position: relative;
-    padding: 8rem 15rem;
+    padding: 6rem 15rem;
     @include respond(tab-land) {
-        padding: 8rem 15rem;
+        padding: 6rem 15rem;
     }
     @include respond(tab-port) {
-        padding: 8rem 10rem;
+        padding: 6rem 10rem;
     }
     @include respond(phone) {
-        padding: 6rem 4rem;
+        padding: 4rem 4rem;
     }
 
     .row {
@@ -28,7 +28,6 @@
 
 
 .section-about {
-    padding-bottom: 2rem;
     background-color: white;
 
     &__heading{
@@ -45,6 +44,9 @@
     }  
 }
 
+.section-products {
+    background-color: $color-blue-light;
+}
 
 .decor-left {
     width: 8vw;

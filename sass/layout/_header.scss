@@ -25,11 +25,11 @@
     }
 
     &__textbox {
-        max-width: 50rem;
+        max-width: 55rem;
         width: fit-content;
         position: absolute;
         top: 35%;
-        left: 15%;
+        left: 12%;
         transform: translateZ(0);
 
         @include respond(tab-port) {
@@ -43,7 +43,7 @@
         &-text {
             color: $color-gray;
             margin-top: 3rem;
-            font-size: 120%;
+            font-size: 2.2rem;
 
             @include respond(tab-land) {
                 width: 45vw;
