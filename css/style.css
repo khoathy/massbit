@@ -73,12 +73,17 @@ body {
 
 .heading-secondary {
   color: #24264b;
-  text-transform: uppercase;
-  font-size: 3.5rem;
+  font-size: 4rem;
   font-weight: 600;
   word-spacing: 0.5rem;
   margin-bottom: 1.6rem;
   text-align: center; }
+
+.heading-tertiary {
+  font-size: 2.5rem;
+  color: #24264b;
+  line-height: 1.4;
+  margin-bottom: 1.6rem; }
 
 .heading-bold {
   font-weight: 600; }
@@ -89,8 +94,7 @@ body {
   font-weight: 300; }
 
 .paragraph {
-  margin: 0 auto;
-  width: 85%; }
+  margin: 0 auto; }
   .paragraph:not(:last-child) {
     margin-bottom: 2rem; }
   @media only screen and (max-width: 56.25em) {
@@ -99,6 +103,11 @@ body {
   @media only screen and (max-width: 37.5em) {
     .paragraph {
       width: 100%; } }
+
+.caption {
+  font-size: 1.4rem;
+  line-height: 1.4;
+  color: #24264b; }
 
 .card__title {
   font-size: 2rem;
@@ -188,7 +197,7 @@ input[type=submit]:active {
       margin-bottom: 2.5rem; } }
   .card__wrapper {
     min-height: 30rem;
-    margin: 2rem;
+    margin: 3rem;
     position: relative;
     border-radius: 2rem;
     padding: 2rem;
@@ -212,16 +221,43 @@ input[type=submit]:active {
       .card:hover {
         transform: translateY(-1rem) rotate(-2deg); } }
 
+.row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  max-width: 120rem;
+  width: 100%;
+  margin: 0 auto; }
+  .row:not(:last-child) {
+    margin-bottom: 6rem; }
+    @media only screen and (max-width: 37.5em) {
+      .row:not(:last-child) {
+        margin-bottom: 2.5rem; } }
+  .row__img {
+    width: 50%;
+    height: auto; }
+    @media only screen and (max-width: 37.5em) {
+      .row__img {
+        min-height: 35vh; } }
+  .row__text {
+    width: 45%; }
+
 @media only screen and (max-width: 37.5em) {
   .grid-item:not(:last-child) {
     margin-bottom: 2.5rem; } }
+
+.grid-item__wrapper {
+  margin: 1rem 4rem; }
+  .grid-item__wrapper img {
+    border-radius: 3rem; }
 
 .grid-figure {
   position: relative;
   transition: all 0.5s ease-in-out;
   overflow: hidden;
   cursor: pointer;
-  margin: 0.5rem; }
+  margin: 2.5rem; }
   .grid-figure figcaption {
     position: absolute;
     bottom: 2rem;
@@ -292,6 +328,11 @@ input[type=submit]:active {
     float: left; }
     .grid div[class*="col-"] img {
       width: 100%; }
+  .grid .col-1-of-2 {
+    width: calc(100%/2); }
+    @media only screen and (max-width: 56.25em) {
+      .grid .col-1-of-2 {
+        width: 100% !important; } }
   .grid .col-1-of-3 {
     width: calc(100%/3); }
     @media only screen and (max-width: 75em) {
@@ -349,11 +390,11 @@ input[type=submit]:active {
     -webkit-transform: translateZ(0) scale(1, 1);
     transform: translateZ(0); }
   .header__textbox {
-    max-width: 50rem;
+    max-width: 55rem;
     width: fit-content;
     position: absolute;
     top: 35%;
-    left: 15%;
+    left: 12%;
     transform: translateZ(0); }
     @media only screen and (max-width: 56.25em) {
       .header__textbox {
@@ -364,7 +405,7 @@ input[type=submit]:active {
     .header__textbox-text {
       color: #505369;
       margin-top: 3rem;
-      font-size: 120%; }
+      font-size: 2.2rem; }
       @media only screen and (max-width: 75em) {
         .header__textbox-text {
           width: 45vw; } }
@@ -614,36 +655,36 @@ input[type=submit]:active {
 
 .section-about,
 .section-products,
-.section-features,
+.section-team,
 .section-funding {
   position: relative;
-  padding: 8rem 15rem; }
+  padding: 6rem 15rem; }
   @media only screen and (max-width: 75em) {
     .section-about,
     .section-products,
-    .section-features,
+    .section-team,
     .section-funding {
-      padding: 8rem 15rem; } }
+      padding: 6rem 15rem; } }
   @media only screen and (max-width: 56.25em) {
     .section-about,
     .section-products,
-    .section-features,
+    .section-team,
     .section-funding {
-      padding: 8rem 10rem; } }
+      padding: 6rem 10rem; } }
   @media only screen and (max-width: 37.5em) {
     .section-about,
     .section-products,
-    .section-features,
+    .section-team,
     .section-funding {
-      padding: 6rem 4rem; } }
+      padding: 4rem 4rem; } }
   .section-about .row,
   .section-products .row,
-  .section-features .row,
+  .section-team .row,
   .section-funding .row {
     position: relative; }
   .section-about .btn,
   .section-products .btn,
-  .section-features .btn,
+  .section-team .btn,
   .section-funding .btn {
     position: absolute;
     right: 50%;
@@ -651,7 +692,6 @@ input[type=submit]:active {
     margin-top: 1.6rem; }
 
 .section-about {
-  padding-bottom: 2rem;
   background-color: white; }
   .section-about__heading h2 {
     display: inline-block;
@@ -660,6 +700,9 @@ input[type=submit]:active {
     left: 0; }
   .section-about .btn {
     z-index: 1; }
+
+.section-products {
+  background-color: #eef2fc; }
 
 .decor-left {
   width: 8vw;
