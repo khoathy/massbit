@@ -229,7 +229,8 @@ input[type=submit]:active {
     filter: grayscale(100%);
     border-radius: 50%;
     width: 70% !important;
-    transition: transform 1s ease-out; }
+    transition: transform 1s ease-out;
+    border: 2px solid #e4edfd; }
     @media only screen and (max-width: 37.5em) {
       .card__img {
         width: 30% !important; } }
@@ -717,8 +718,7 @@ input[type=submit]:active {
   background-color: #e4edfd; }
 
 .section-funding {
-  padding-bottom: 1 5rem;
-  height: 100vh; }
+  padding-bottom: 10rem; }
 
 .decor-left {
   width: 8vw;
