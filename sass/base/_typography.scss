@@ -19,7 +19,6 @@ body {
 .heading-primary {
     font-size: 5rem;
     color: $color-gray-dark;
-    text-transform: none;
     line-height: 1.3;
     @include respond(tab-port){
         width: 90%;
@@ -79,20 +78,23 @@ body {
     color: $color-gray-dark;
 }
 
-// .price {
-//     font-size: 1.6rem;
-//     font-weight: 500;
-// }
+.card {
+    &__name {
+        text-transform: uppercase;
+        color: $color-gray-dark;
+        font-size: 2rem;
+    }
 
+    &__title {
+        font-size: 1.4rem;
+        line-height: 1.2;
+        color: $color-primary;
+    }
 
-.card__title {
-    font-size: 2rem;
-    font-weight: 300;
-    text-transform: uppercase;
-    color: $color-primary-light;
-}
-
-.card__description {
-    font-size: 1.4rem;
-    line-height: 1.4;
+    &__details {
+        font-size: 1.4rem;
+        line-height: 1.4;
+        color: $color-gray-light;
+        text-align: center;
+    }
 }
