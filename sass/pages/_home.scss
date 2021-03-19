@@ -52,7 +52,7 @@
     width: 8vw;
     position: absolute;
     bottom: -15rem;
-    left: -1.8rem;
+    left: -1rem;
     transform-origin: bottom left;
     transition: all 0.5s ease-out;
     @include respond(tab-land){bottom: -15rem;}
