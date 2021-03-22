@@ -1,0 +1,33 @@
+.brand {
+    display: flex;
+    align-items: center;
+
+    &__item {
+        margin: 2rem;
+        position: relative;
+
+        @include respond(phone){
+            width: 90% !important;
+            margin: 0 auto;
+            min-height: 0;
+        }
+    }
+    &__wrapper {
+        height: 5rem;
+    }
+
+    &__img {
+        // object-fit: cover;
+        // object-position: top;
+        transition: transform 1s ease-out;
+        border: 2px solid $color-blue-light;
+        height: 100%;
+        
+        @include respond(phone){
+            width: 30% !important;
+        }
+
+    }
+    
+
+}

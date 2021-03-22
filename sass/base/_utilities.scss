@@ -14,5 +14,9 @@
 .u-margin-top-big { margin-top: 8rem !important; }
 .u-margin-top-huge { margin-top: 10rem !important; }
 
+.u-grayscale {
+    -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+    filter: grayscale(100%);
+}
 
 // .last {margin-right: 0 !important; }

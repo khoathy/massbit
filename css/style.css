@@ -153,6 +153,11 @@ body {
 .u-margin-top-huge {
   margin-top: 10rem !important; }
 
+.u-grayscale {
+  -webkit-filter: grayscale(100%);
+  /* Safari 6.0 - 9.0 */
+  filter: grayscale(100%); }
+
 .btn,
 .btn:link,
 .btn:visited,
@@ -224,9 +229,6 @@ input[type=submit]:active {
       .card__details {
         margin: 1rem auto; } }
   .card__img {
-    -webkit-filter: grayscale(100%);
-    /* Safari 6.0 - 9.0 */
-    filter: grayscale(100%);
     border-radius: 50%;
     width: 70% !important;
     transition: transform 1s ease-out;
@@ -301,6 +303,27 @@ input[type=submit]:active {
       .grid-figure:hover img {
         transform: none; } }
 
+.brand {
+  display: flex;
+  align-items: center; }
+  .brand__item {
+    margin: 2rem;
+    position: relative; }
+    @media only screen and (max-width: 37.5em) {
+      .brand__item {
+        width: 90% !important;
+        margin: 0 auto;
+        min-height: 0; } }
+  .brand__wrapper {
+    height: 5rem; }
+  .brand__img {
+    transition: transform 1s ease-out;
+    border: 2px solid #e4edfd;
+    height: 100%; }
+    @media only screen and (max-width: 37.5em) {
+      .brand__img {
+        width: 30% !important; } }
+
 .list__item {
   list-style: none;
   position: relative;
@@ -367,7 +390,7 @@ input[type=submit]:active {
       .grid .col-1-of-4 {
         width: 100% !important; } }
   .grid .col-1-of-5 {
-    width: calc(100% / 5); }
+    width: calc(100% / 6); }
     @media only screen and (max-width: 56.25em) {
       .grid .col-1-of-5 {
         width: calc(100%/4) !important; } }
@@ -679,42 +702,49 @@ input[type=submit]:active {
 .section-about,
 .section-products,
 .section-team,
-.section-funding {
+.section-funding,
+.section-experience {
   position: relative;
   padding: 6rem 15rem; }
   @media only screen and (max-width: 75em) {
     .section-about,
     .section-products,
     .section-team,
-    .section-funding {
+    .section-funding,
+    .section-experience {
       padding: 6rem 15rem; } }
   @media only screen and (max-width: 56.25em) {
     .section-about,
     .section-products,
     .section-team,
-    .section-funding {
+    .section-funding,
+    .section-experience {
       padding: 6rem 10rem; } }
   @media only screen and (max-width: 37.5em) {
     .section-about,
     .section-products,
     .section-team,
-    .section-funding {
+    .section-funding,
+    .section-experience {
       padding: 4rem 4rem; } }
   .section-about .row,
   .section-products .row,
   .section-team .row,
-  .section-funding .row {
+  .section-funding .row,
+  .section-experience .row {
     position: relative; }
   .section-about .btn,
   .section-products .btn,
   .section-team .btn,
-  .section-funding .btn {
+  .section-funding .btn,
+  .section-experience .btn {
     position: absolute;
     right: 50%;
     transform: translateX(50%);
     margin-top: 1.6rem; }
 
-.section-products {
+.section-products,
+.section-experience {
   background-color: #e4edfd; }
 
 .section-funding {
@@ -732,10 +762,11 @@ input[type=submit]:active {
       bottom: -15rem; } }
 
 .decor-right {
+  z-index: 10;
   width: 50vw;
   position: absolute;
   bottom: -15rem;
-  right: -2rem;
+  right: -35rem;
   transform-origin: bottom right;
   transition: all 0.5s ease-out; }
   @media only screen and (max-width: 75em) {

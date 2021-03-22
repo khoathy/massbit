@@ -1,7 +1,8 @@
 .section-about,
 .section-products,
 .section-team,
-.section-funding {
+.section-funding,
+.section-experience {
     position: relative;
     padding: 6rem 15rem;
     @include respond(tab-land) {
@@ -26,7 +27,8 @@
     }
 }
 
-.section-products {
+.section-products,
+.section-experience {
     background-color: $color-blue-light;
 }
 
@@ -45,10 +47,11 @@
 }
 
 .decor-right {
+    z-index: 10;
     width: 50vw;
     position: absolute;
     bottom: -15rem;
-    right: -2rem;
+    right: -35rem;
     transform-origin: bottom right;
     transition: all 0.5s ease-out;
     @include respond(tab-land){bottom: -15rem;}
