@@ -4,6 +4,7 @@
     margin: 0 auto;
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
 
     
     @include clearfix;
@@ -49,7 +50,7 @@
 
 
     .col-1-of-5 {
-        width: calc(100% / 6);
+        width: calc(100% / 5);
         @include respond(tab-port) {
             width: calc(100%/4)!important;   
         }
@@ -58,8 +59,9 @@
         }
     }
 
-    .col-3-of-5 {
-        width: calc(3 * (100% / 5));
+    .col-2-of-5 {
+        width: calc(2 * (100% / 5));
+        text-align: left;
         @include respond(tab-port) {
             width: calc(100%/2)!important;   
         }

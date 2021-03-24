@@ -38,6 +38,10 @@ body {
     word-spacing: 0.5rem;
     margin-bottom: 1.6rem;
     text-align: center;
+    @include respond(tab-port){
+        line-height: 1.2;
+        font-size: 3.5rem;
+    }
 }
 
 .heading-tertiary {

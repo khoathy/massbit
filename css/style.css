@@ -77,6 +77,10 @@ body {
   word-spacing: 0.5rem;
   margin-bottom: 1.6rem;
   text-align: center; }
+  @media only screen and (max-width: 56.25em) {
+    .heading-secondary {
+      line-height: 1.2;
+      font-size: 3.5rem; } }
 
 .heading-tertiary {
   font-size: 2.5rem;
@@ -152,6 +156,9 @@ body {
 
 .u-margin-top-huge {
   margin-top: 10rem !important; }
+
+.u-margin-down {
+  margin-bottom: -0.5rem !important; }
 
 .u-grayscale {
   -webkit-filter: grayscale(100%);
@@ -232,7 +239,7 @@ input[type=submit]:active {
     border-radius: 50%;
     width: 70% !important;
     transition: transform 1s ease-out;
-    border: 2px solid #e4edfd; }
+    box-shadow: 0rem 0.5rem 1.5rem 0.2rem rgba(80, 83, 105, 0.1); }
     @media only screen and (max-width: 37.5em) {
       .card__img {
         width: 30% !important; } }
@@ -305,9 +312,9 @@ input[type=submit]:active {
 
 .brand {
   display: flex;
-  align-items: center; }
+  align-items: center;
+  justify-content: center; }
   .brand__item {
-    margin: 2rem;
     position: relative; }
     @media only screen and (max-width: 37.5em) {
       .brand__item {
@@ -315,7 +322,8 @@ input[type=submit]:active {
         margin: 0 auto;
         min-height: 0; } }
   .brand__wrapper {
-    height: 5rem; }
+    height: 5rem;
+    margin: 1rem 2rem; }
   .brand__img {
     transition: transform 1s ease-out;
     border: 2px solid #e4edfd;
@@ -356,7 +364,8 @@ input[type=submit]:active {
   width: 100%;
   margin: 0 auto;
   display: flex;
-  flex-wrap: wrap; }
+  flex-wrap: wrap;
+  justify-content: center; }
   .grid::after {
     content: "";
     display: table;
@@ -390,20 +399,21 @@ input[type=submit]:active {
       .grid .col-1-of-4 {
         width: 100% !important; } }
   .grid .col-1-of-5 {
-    width: calc(100% / 6); }
+    width: calc(100% / 5); }
     @media only screen and (max-width: 56.25em) {
       .grid .col-1-of-5 {
         width: calc(100%/4) !important; } }
     @media only screen and (max-width: 37.5em) {
       .grid .col-1-of-5 {
         width: calc(100%/3) !important; } }
-  .grid .col-3-of-5 {
-    width: calc(3 * (100% / 5)); }
+  .grid .col-2-of-5 {
+    width: calc(2 * (100% / 5));
+    text-align: left; }
     @media only screen and (max-width: 56.25em) {
-      .grid .col-3-of-5 {
+      .grid .col-2-of-5 {
         width: calc(100%/2) !important; } }
     @media only screen and (max-width: 37.5em) {
-      .grid .col-3-of-5 {
+      .grid .col-2-of-5 {
         width: calc(100%/3) !important; } }
 
 .header {
