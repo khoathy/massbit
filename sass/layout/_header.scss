@@ -44,6 +44,7 @@
             color: $color-gray;
             margin-top: 3rem;
             font-size: 2.2rem;
+            line-height: 1.6;
 
             @include respond(tab-land) {
                 width: 45vw;
