@@ -32,7 +32,7 @@
     background-color: $color-blue-light;
 }
 
-.section-funding{
+.section-funding {
     padding-bottom: 10rem;
 }
 
@@ -43,7 +43,7 @@
     left: -1rem;
     transform-origin: bottom left;
     transition: all 0.5s ease-out;
-    @include respond(tab-land){bottom: -15rem;}
+    transform: rotate(0);
 }
 
 .decor-right {

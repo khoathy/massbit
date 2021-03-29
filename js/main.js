@@ -33,20 +33,26 @@ $(document).ready(function(){
 
 
         //decoration animation-left
-        if(wScroll > $('.section-about').offset().top + $(window).height()/20 && wScroll < $('.section-products').offset().top) {
-                $('.decor-left').css({
-                'transform': 'rotate('+(wScroll/20-29) +'deg)'
+        // if(wScroll > $('.section-products').offset().top + $(window).height()/20 && wScroll < $('.section-products').offset().top) { 
+        //     $('.decor-left').css({
+        //         'transform': 'rotate('+(wScroll/20-29) +'deg)'
+        //     });
+        //     console.log("left");
+        if(wScroll > $('.section-team').offset().top - $(window).height()/1.5 && wScroll < $('.section-experience').offset().top) { 
+            $('.decor-left').css({
+                'transform': 'rotate('+(wScroll/20-90) +'deg)'
             });
+            console.log("left");
+            console.log(wScroll/20-90);
         
         };
 
         //decoration animation-right
-        if(wScroll > $('.section-portfolio').offset().top - $(window).height()/3 && wScroll < $('.footer').offset().top) {
-            $('.decor-right').css({
-                'transform': 'rotate('+(-wScroll/30+85) +'deg)'
-            });
-        
-        };
+        // if(wScroll > $('.section-team').offset().top - $(window).height()/3 && wScroll < $('.footer').offset().top) {
+        //     $('.decor-right').css({
+        //         'transform': 'rotate('+(-wScroll/30+85) +'deg)'
+        //     });
+        // };
 
     });
 
@@ -60,7 +66,7 @@ $(document).ready(function(){
         //if click on anything except the modal itself or the "open modal" link, close the modal
         if (!$(event.target).closest(".nav__menu,.menu").length) {
           $("body").find(".nav__menu").removeClass("visible");
-          console.log('click ouside')
+        //   console.log('click ouside')
         }
     });
 

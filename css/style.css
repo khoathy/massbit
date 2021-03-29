@@ -767,10 +767,8 @@ input[type=submit]:active {
   bottom: -15rem;
   left: -1rem;
   transform-origin: bottom left;
-  transition: all 0.5s ease-out; }
-  @media only screen and (max-width: 75em) {
-    .decor-left {
-      bottom: -15rem; } }
+  transition: all 0.5s ease-out;
+  transform: rotate(0); }
 
 .decor-right {
   z-index: 10;
