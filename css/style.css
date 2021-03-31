@@ -271,7 +271,7 @@ input[type=submit]:active {
     margin-bottom: 2.5rem; } }
 
 .grid-item__wrapper {
-  margin: 1rem 4rem; }
+  margin: 4rem; }
   .grid-item__wrapper img {
     border-radius: 3rem; }
 
@@ -711,6 +711,7 @@ input[type=submit]:active {
       margin-bottom: 32rem; } }
 
 .section-about,
+.section-platform,
 .section-products,
 .section-team,
 .section-funding,
@@ -719,6 +720,7 @@ input[type=submit]:active {
   padding: 6rem 15rem; }
   @media only screen and (max-width: 75em) {
     .section-about,
+    .section-platform,
     .section-products,
     .section-team,
     .section-funding,
@@ -726,6 +728,7 @@ input[type=submit]:active {
       padding: 6rem 15rem; } }
   @media only screen and (max-width: 56.25em) {
     .section-about,
+    .section-platform,
     .section-products,
     .section-team,
     .section-funding,
@@ -733,18 +736,21 @@ input[type=submit]:active {
       padding: 6rem 10rem; } }
   @media only screen and (max-width: 37.5em) {
     .section-about,
+    .section-platform,
     .section-products,
     .section-team,
     .section-funding,
     .section-experience {
       padding: 4rem 4rem; } }
   .section-about .row,
+  .section-platform .row,
   .section-products .row,
   .section-team .row,
   .section-funding .row,
   .section-experience .row {
     position: relative; }
   .section-about .btn,
+  .section-platform .btn,
   .section-products .btn,
   .section-team .btn,
   .section-funding .btn,
@@ -760,6 +766,11 @@ input[type=submit]:active {
 
 .section-funding {
   padding-bottom: 10rem; }
+
+.platform-img {
+  width: 90%;
+  padding: 4rem;
+  text-align: center; }
 
 .decor-left {
   width: 8vw;
