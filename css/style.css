@@ -786,7 +786,7 @@ input[type=submit]:active {
   width: 50vw;
   position: absolute;
   bottom: -15rem;
-  right: -35rem;
+  right: -15rem;
   transform-origin: bottom right;
   transition: all 0.5s ease-out; }
   @media only screen and (max-width: 75em) {
