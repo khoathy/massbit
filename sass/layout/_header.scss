@@ -32,14 +32,37 @@
         left: 12%;
         transform: translateZ(0);
 
+        @include respond(tab-land) {
+            width: 35vw;
+            left: 8%;
+        }
+
         @include respond(tab-port) {
             top: 20%;
+            left: 50%;
+            transform: translate(-50%, 0);
             width: 85vw;
+            text-align: center;
+            max-width: 100%;
+        }
+
+        @include respond(phone) {
+            width: 100%;
+            text-align: center;
         }
 
         &-content {
             color: $color-gray-dark;
+
+            @include respond(tab-port) {
+                margin: 0 auto;
+                max-width: 80%;
+            }
+            @include respond(phone) {
+                max-width: 90%;
+            }
         }
+
         &-text {
             color: $color-gray;
             margin-top: 3rem;
@@ -47,29 +70,36 @@
             line-height: 1.6;
 
             @include respond(tab-land) {
-                width: 45vw;
+                width: 35vw;
             }
             @include respond(tab-port) {
                 width: 85vw;
+                margin: 3rem auto;
+                font-size: 2rem;
             }
-
         }
     }
 
     &__display {
         width: 42%;
+        max-height: 80vh;
         position: absolute;
         bottom: 3%;
         right: 5%;
 
         @include respond(tab-land) {
-            right: 5%;
-            width: 36%;
+            width: 55vw;
+            right: 2%;
         }
+
         @include respond(tab-port) {
-            height: 45vh;
+            max-height: 65vh;
+            max-width: 75vw;
             width: auto;
-            right: 15%;
+        }
+        @include respond(phone) {
+            max-height: 50%;
+            width: auto;
         }   
     }
 
@@ -89,8 +119,13 @@
         background-image: url(../img/back.svg);
 
         @include respond(tab-land) {
-            background-size: 100%;
+            background-size: 110%;
         }
+
+        @include respond(tab-port) {
+            background-size: cover;
+            height: 60vh;
+        }   
     }
     
     &__fore {

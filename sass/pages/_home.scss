@@ -13,7 +13,7 @@
         padding: 6rem 10rem;
     }
     @include respond(phone) {
-        padding: 4rem 4rem;
+        padding: 4rem;
     }
 
     .row {
@@ -35,12 +35,22 @@
 
 .section-funding {
     padding-bottom: 10rem;
+    @include respond(tab-port) {
+        padding-bottom: 6rem;
+    }
+    @include respond(phone) {
+        padding-bottom: 3rem;
+    }
 }
 
 .platform-img {
     width: 90%;
     padding: 4rem;
     text-align: center;
+    @include respond(phone) {
+        width: 100%;
+        padding: 0;
+    }
 }
 
 .decor-left {
