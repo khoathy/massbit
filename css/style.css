@@ -166,6 +166,9 @@ body {
   /* Safari 6.0 - 9.0 */
   filter: grayscale(100%); }
 
+.u-img-shadow {
+  box-shadow: 0.5rem 3rem 6rem 0rem rgba(80, 83, 105, 0.1); }
+
 .btn,
 .btn:link,
 .btn:visited,
