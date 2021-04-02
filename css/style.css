@@ -12,6 +12,32 @@
 /*
 COLORS:
 */
+@keyframes flash {
+  0% {
+    stroke: #f95860; }
+  20% {
+    stroke: #2C3ACF; }
+  30%, 100% {
+    stroke: #23C479;
+    stroke-width: 2; } }
+
+@keyframes float {
+  0% {
+    transform: translateY(0) scale(1); }
+  25% {
+    transform: translateY(-3px); }
+  50% {
+    transform: scale(1.005); }
+  75% {
+    transform: translateY(8px); }
+  100% {
+    transform: translateY(0); } }
+
+@keyframes dash {
+  100% {
+    stroke-dasharray: 300;
+    stroke-dashoffset: 90; } }
+
 * {
   margin: 0;
   padding: 0; }
@@ -167,7 +193,7 @@ body {
   filter: grayscale(100%); }
 
 .u-img-shadow {
-  box-shadow: 0.5rem 3rem 6rem 0rem rgba(80, 83, 105, 0.1); }
+  box-shadow: 0.5rem 3rem 6rem 0rem rgba(39, 49, 155, 0.1); }
 
 .btn,
 .btn:link,
@@ -445,7 +471,7 @@ input[type=submit]:active {
     -webkit-transform: translateZ(0) scale(1, 1);
     transform: translateZ(0); }
   .header__textbox {
-    max-width: 55rem;
+    max-width: 60rem;
     width: fit-content;
     position: absolute;
     top: 35%;
@@ -495,6 +521,18 @@ input[type=submit]:active {
     position: absolute;
     bottom: 3%;
     right: 5%; }
+    .header__display .st4,
+    .header__display .st5,
+    .header__display .st16 {
+      transform-origin: center;
+      animation: float 5s linear infinite; }
+    .header__display .st7 {
+      stroke: #23C479;
+      animation: flash 4s ease-in-out infinite; }
+    .header__display .st8 {
+      stroke-dasharray: 0;
+      stroke-dashoffset: 0;
+      animation: dash 4s linear infinite; }
     @media only screen and (max-width: 75em) {
       .header__display {
         width: 55vw;
