@@ -66,6 +66,21 @@ html {
 ::selection {
   background-color: #86a5fc; }
 
+#svg__hero .st4,
+#svg__hero .st5,
+#svg__hero .st16 {
+  transform-origin: center;
+  animation: float 5s linear infinite; }
+
+#svg__hero .st7 {
+  stroke: #23C479;
+  animation: flash 4s ease-in-out infinite; }
+
+#svg__hero .st8 {
+  stroke-dasharray: 0;
+  stroke-dashoffset: 0;
+  animation: dash 4s linear infinite; }
+
 body {
   font-family: 'Mulish', sans-serif;
   font-weight: 400;
@@ -192,7 +207,7 @@ body {
   /* Safari 6.0 - 9.0 */
   filter: grayscale(100%); }
 
-.u-img-shadow {
+.u-shadow {
   box-shadow: 0.5rem 3rem 6rem 0rem rgba(39, 49, 155, 0.1); }
 
 .btn,
@@ -280,23 +295,27 @@ input[type=submit]:active {
   width: 100%;
   max-width: 120rem;
   width: 100%;
-  margin: 0 auto; }
+  margin: 12rem auto; }
   @media only screen and (max-width: 37.5em) {
     .row {
       display: block; } }
-  .row:not(:last-child) {
+  .row:last-child {
     margin-bottom: 6rem; }
     @media only screen and (max-width: 37.5em) {
-      .row:not(:last-child) {
+      .row:last-child {
         margin-bottom: 2.5rem; } }
   .row__img {
     width: 50%;
-    height: auto; }
+    height: auto;
+    border-radius: 3rem;
+    box-shadow: 0.5rem 3rem 6rem 0rem rgba(39, 49, 155, 0.1); }
+    .row__img-right {
+      order: -1; }
     @media only screen and (max-width: 37.5em) {
       .row__img {
         width: 100%; } }
   .row__text {
-    width: 45%; }
+    width: 42%; }
     @media only screen and (max-width: 37.5em) {
       .row__text {
         width: 100%; } }
@@ -521,18 +540,6 @@ input[type=submit]:active {
     position: absolute;
     bottom: 3%;
     right: 5%; }
-    .header__display .st4,
-    .header__display .st5,
-    .header__display .st16 {
-      transform-origin: center;
-      animation: float 5s linear infinite; }
-    .header__display .st7 {
-      stroke: #23C479;
-      animation: flash 4s ease-in-out infinite; }
-    .header__display .st8 {
-      stroke-dasharray: 0;
-      stroke-dashoffset: 0;
-      animation: dash 4s linear infinite; }
     @media only screen and (max-width: 75em) {
       .header__display {
         width: 55vw;
@@ -871,8 +878,8 @@ input[type=submit]:active {
   z-index: 10;
   width: 50vw;
   position: absolute;
-  bottom: -15rem;
-  right: -15rem;
+  bottom: -5rem;
+  right: -25rem;
   transform-origin: bottom right;
   transition: all 0.5s ease-out; }
   @media only screen and (max-width: 75em) {

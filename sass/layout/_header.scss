@@ -87,28 +87,6 @@
         bottom: 3%;
         right: 5%;
 
-        //svg animation
-        //floating cloud
-        .st4, 
-        .st5, 
-        .st16 {
-            transform-origin: center;
-            animation: float 5s linear infinite;
-        }
-        
-        //color-changing link
-        .st7 {
-            stroke: #23C479;
-            animation: flash 4s ease-in-out infinite;
-        }
-
-        //dashing link
-        .st8 {
-            stroke-dasharray: 0;
-            stroke-dashoffset: 0;
-            animation: dash 4s linear infinite;
-          }
-
         @include respond(tab-land) {
             width: 55vw;
             right: 2%;

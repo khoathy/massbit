@@ -5,13 +5,13 @@
     width: 100%;
     max-width: $grid-width;
     width: 100%;
-    margin: 0 auto;
+    margin: 12rem auto;
+
     @include respond(phone){
         display: block;
     }
 
-
-    &:not(:last-child){
+    &:last-child {
         margin-bottom: 6rem;
         @include respond(phone){
             margin-bottom: 2.5rem;
@@ -23,6 +23,12 @@
         // height: 40rem;
         width: 50%;
         height: auto;
+        border-radius: 3rem;
+        box-shadow: 0.5rem 3rem 6rem 0rem rgba($color-primary-dark,0.1);
+
+        &-right {
+            order: -1;
+        }
 
         @include respond(phone){
             width: 100%;
@@ -30,7 +36,7 @@
     }
     
     &__text {
-        width: 45%;
+        width: 42%;
         @include respond(phone){
             width: 100%;
         }
