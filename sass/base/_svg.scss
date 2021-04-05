@@ -28,9 +28,11 @@
             }
             #man-large {
                 animation: rotate-left 2s ease-in-out infinite;
+                transform: translate(-19px, 5px);
+                transform-origin: 90% 95%;
             }
             #coins path {
-                animation: sparkle 1.8s ease-in-out infinite;
+                animation: sparkle 1.5s ease-in-out infinite;
             }
     }
 }
