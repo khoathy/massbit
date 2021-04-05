@@ -38,7 +38,7 @@
         }
 
         @include respond(tab-port) {
-            top: 20%;
+            top: 22%;
             left: 50%;
             transform: translate(-50%, 0);
             width: 85vw;
@@ -48,7 +48,7 @@
 
         @include respond(phone) {
             width: 100%;
-            text-align: center;
+            // text-align: center;
         }
 
         &-content {
@@ -59,7 +59,8 @@
                 max-width: 75%;
             }
             @include respond(phone) {
-                max-width: 90%;
+                max-width: 80%;
+                text-align: left;
             }
         }
 
@@ -76,6 +77,10 @@
                 width: 85vw;
                 margin: 3rem auto;
                 font-size: 2rem;
+            }
+            @include respond(phone) {
+                max-width: 80%;
+                text-align: left;
             }
         }
     }
@@ -98,8 +103,10 @@
             width: auto;
         }
         @include respond(phone) {
-            max-height: 50%;
+            max-height: 60vh;
+            max-width: 96vw;
             width: auto;
+            bottom: 5%;
         }   
     }
 

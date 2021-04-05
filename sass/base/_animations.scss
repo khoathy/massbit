@@ -1,4 +1,4 @@
-
+//animation for hero image
 @keyframes flash {
     0%        {stroke: #f95860;}
     20%       {stroke: #2C3ACF;}
@@ -23,3 +23,27 @@
     }
 }
   
+//animation for section Why Massbit
+@keyframes dig-left {
+    30% {
+        transform-origin: 55% 70%;
+        transform : translate(3px,5px) rotate(-4deg);
+    }
+    70% {
+        transform : rotate(-2deg);
+    }
+} 
+
+
+@keyframes rotate-left {
+    30%, 72%  {
+        transform-origin: 100% 100%;
+        transform : rotate(-1deg);
+    }
+}
+
+@keyframes sparkle {
+    30%, 35%  {opacity: 0.6;}
+    45%  {opacity: 0.9;}
+    
+}

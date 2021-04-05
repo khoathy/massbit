@@ -38,6 +38,24 @@ COLORS:
     stroke-dasharray: 300;
     stroke-dashoffset: 90; } }
 
+@keyframes dig-left {
+  30% {
+    transform-origin: 55% 70%;
+    transform: translate(3px, 5px) rotate(-4deg); }
+  70% {
+    transform: rotate(-2deg); } }
+
+@keyframes rotate-left {
+  30%, 72% {
+    transform-origin: 100% 100%;
+    transform: rotate(-1deg); } }
+
+@keyframes sparkle {
+  30%, 35% {
+    opacity: 0.6; }
+  45% {
+    opacity: 0.9; } }
+
 * {
   margin: 0;
   padding: 0; }
@@ -82,7 +100,13 @@ html {
   animation: dash 3.5s linear infinite; }
 
 #svg__mining #top {
-  transform-origin: right bottom; }
+  animation: dig-left 2s linear infinite; }
+
+#svg__mining #man-large {
+  animation: rotate-left 2s ease-in-out infinite; }
+
+#svg__mining #coins path {
+  animation: sparkle 1.8s ease-in-out infinite; }
 
 body {
   font-family: 'Quicksand', sans-serif;
@@ -117,7 +141,7 @@ body {
 .heading-secondary {
   color: #24264b;
   font-size: 4rem;
-  font-weight: 600;
+  font-weight: 700;
   word-spacing: 0.5rem;
   margin-bottom: 1.6rem;
   text-align: center; }
@@ -507,7 +531,7 @@ input[type=submit]:active {
         left: 8%; } }
     @media only screen and (max-width: 56.25em) {
       .header__textbox {
-        top: 20%;
+        top: 22%;
         left: 50%;
         transform: translate(-50%, 0);
         width: 85vw;
@@ -515,8 +539,7 @@ input[type=submit]:active {
         max-width: 100%; } }
     @media only screen and (max-width: 37.5em) {
       .header__textbox {
-        width: 100%;
-        text-align: center; } }
+        width: 100%; } }
     .header__textbox-content {
       color: #24264b; }
       @media only screen and (max-width: 56.25em) {
@@ -525,7 +548,8 @@ input[type=submit]:active {
           max-width: 75%; } }
       @media only screen and (max-width: 37.5em) {
         .header__textbox-content {
-          max-width: 90%; } }
+          max-width: 80%;
+          text-align: left; } }
     .header__textbox-text {
       color: #505369;
       margin-top: 3rem;
@@ -539,6 +563,10 @@ input[type=submit]:active {
           width: 85vw;
           margin: 3rem auto;
           font-size: 2rem; } }
+      @media only screen and (max-width: 37.5em) {
+        .header__textbox-text {
+          max-width: 80%;
+          text-align: left; } }
   .header__display {
     width: 42%;
     max-height: 80vh;
@@ -556,8 +584,10 @@ input[type=submit]:active {
         width: auto; } }
     @media only screen and (max-width: 37.5em) {
       .header__display {
-        max-height: 50%;
-        width: auto; } }
+        max-height: 60vh;
+        max-width: 96vw;
+        width: auto;
+        bottom: 5%; } }
   .header__back, .header__fore {
     position: absolute;
     width: 100%;
