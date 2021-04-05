@@ -12,14 +12,14 @@
         //color-changing link
         .st7 {
             stroke: #23C479;
-            animation: flash 4s ease-in-out infinite;
+            animation: flash 3.5s ease-in-out infinite;
         }
 
         //dashing link
         .st8 {
             stroke-dasharray: 0;
             stroke-dashoffset: 0;
-            animation: dash 4s linear infinite;
+            animation: dash 3.5s linear infinite;
         }
     }
     &__mining {

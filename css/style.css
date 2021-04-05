@@ -25,7 +25,7 @@ COLORS:
   0% {
     transform: translateY(0) scale(1); }
   25% {
-    transform: translateY(-3px); }
+    transform: translateY(-2px); }
   50% {
     transform: scale(1.005); }
   75% {
@@ -74,12 +74,12 @@ html {
 
 #svg__hero .st7 {
   stroke: #23C479;
-  animation: flash 4s ease-in-out infinite; }
+  animation: flash 3.5s ease-in-out infinite; }
 
 #svg__hero .st8 {
   stroke-dasharray: 0;
   stroke-dashoffset: 0;
-  animation: dash 4s linear infinite; }
+  animation: dash 3.5s linear infinite; }
 
 body {
   font-family: 'Mulish', sans-serif;
@@ -263,7 +263,7 @@ input[type=submit]:active {
       .card:hover {
         transform: translateY(-1rem) rotate(-2deg); } }
   .card__wrapper {
-    margin: 1rem 2rem;
+    margin: 1rem 1rem;
     position: relative;
     border-radius: 2rem;
     padding: 2rem;
@@ -490,7 +490,7 @@ input[type=submit]:active {
     -webkit-transform: translateZ(0) scale(1, 1);
     transform: translateZ(0); }
   .header__textbox {
-    max-width: 60rem;
+    max-width: 55rem;
     width: fit-content;
     position: absolute;
     top: 35%;
@@ -517,7 +517,7 @@ input[type=submit]:active {
       @media only screen and (max-width: 56.25em) {
         .header__textbox-content {
           margin: 0 auto;
-          max-width: 80%; } }
+          max-width: 75%; } }
       @media only screen and (max-width: 37.5em) {
         .header__textbox-content {
           max-width: 90%; } }
@@ -546,7 +546,7 @@ input[type=submit]:active {
         right: 2%; } }
     @media only screen and (max-width: 56.25em) {
       .header__display {
-        max-height: 65vh;
+        max-height: 50vh;
         max-width: 75vw;
         width: auto; } }
     @media only screen and (max-width: 37.5em) {
