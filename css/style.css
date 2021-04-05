@@ -157,7 +157,8 @@ body {
 .card__name {
   text-transform: uppercase;
   color: #24264b;
-  font-size: 2rem; }
+  font-size: 2rem;
+  line-height: 1.4; }
 
 .card__title {
   font-size: 1.4rem;
