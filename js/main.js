@@ -24,7 +24,7 @@ $(document).ready(function(){
     
         // sticky header 
         
-        if(wScroll >= ($('.header__textbox').offset().top)){
+        if(wScroll >= ($('.header__textbox').offset().top - 60)){
             $('.nav').addClass('nav__sticky');
         } else {
             $('.nav').removeClass('nav__sticky');

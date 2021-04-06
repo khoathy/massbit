@@ -64,11 +64,10 @@
         #glass-small {
             transform-origin: center;
             transform-box: fill-box;
-            animation: glass 1.5s ease-in-out infinite;
+            animation: glass 3s ease-in-out infinite;
         }
         #glass-small {
             animation-delay: 0.5s;
         }
-        
     }
 }

@@ -85,9 +85,9 @@ COLORS:
 
 @keyframes glass {
   0%, 80%, 100% {
-    transform: scale(0.9); }
+    transform: scale(0.8) translateX(-10px); }
   65%, 95% {
-    transform: scale(1.1); } }
+    transform: scale(1); } }
 
 * {
   margin: 0;
@@ -163,7 +163,7 @@ html {
 #svg__monitor #glass-small {
   transform-origin: center;
   transform-box: fill-box;
-  animation: glass 1.5s ease-in-out infinite; }
+  animation: glass 3s ease-in-out infinite; }
 
 #svg__monitor #glass-small {
   animation-delay: 0.5s; }
