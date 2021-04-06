@@ -22,6 +22,24 @@
             animation: dash 3.5s linear infinite;
         }
     }
+
+    &__outage {
+        // #tick{
+        //     animation: flashing-colors 1s linear infinite;
+        // }
+        .outage6{
+            animation: flash-green 1s linear infinite;
+        }
+        #drop {
+            animation: float 1s linear infinite;
+        }
+        #mouth {
+            transform-origin: center;
+            transform-box: fill-box;
+            animation: scale 5s ease-out infinite;
+        }
+    }
+
     &__mining {
             #top {
                 animation: dig-left 2s linear infinite;
