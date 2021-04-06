@@ -24,8 +24,8 @@
 }
 
   
-//animation for section Why Massbit
-//outage animation
+//Animation for section Why Massbit
+//1-outage animation
 @keyframes flash-green {
     0% {fill: #28E0B0;}
     49% {fill: #82e4be;}
@@ -44,7 +44,7 @@
     55%, 65%, 75%, 85%, 95% {transform :scale(1.2)}
 }
 
-//data-mining animation
+//2- Data-mining animation
 //data-mining animation: top
 @keyframes dig-left {
     30% {
@@ -69,5 +69,18 @@
     30%, 35%  {opacity: 0.6;}
     45%  {opacity: 0.9;}
     
+}
+
+//3- Monitor animation
+@keyframes monitor {
+    0%, 10%, 100% {transform: translateY(0px) rotate(-1deg);}
+    40%, 70%  {
+        transform : translateY(-10px) rotate(6deg);
+    }
+}
+
+@keyframes glass {
+    0%, 80%, 100% {transform :scale(0.9)}
+    65%, 95% {transform :scale(1.1)}
 }
 

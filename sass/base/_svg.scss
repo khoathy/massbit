@@ -41,16 +41,34 @@
     }
 
     &__mining {
-            #top {
-                animation: dig-left 2s linear infinite;
-            }
-            #man-large {
-                animation: rotate-left 2s ease-in-out infinite;
-                transform: translate(-19px, 5px);
-                transform-origin: 90% 95%;
-            }
-            #coins path {
-                animation: sparkle 1.5s ease-in-out infinite;
-            }
+        #top {
+            animation: dig-left 2s linear infinite;
+        }
+        #man-large {
+            animation: rotate-left 2s ease-in-out infinite;
+            transform: translate(-19px, 5px);
+            transform-origin: 90% 95%;
+        }
+        #coins path {
+            animation: sparkle 1.5s ease-in-out infinite;
+        }
+    }
+
+    &__monitor {
+        #monitor-top {
+            transform-origin: 00% 80%;
+            transform-box: fill-box;
+            animation: monitor 3s linear infinite;
+        }
+        #glass,
+        #glass-small {
+            transform-origin: center;
+            transform-box: fill-box;
+            animation: glass 1.5s ease-in-out infinite;
+        }
+        #glass-small {
+            animation-delay: 0.5s;
+        }
+        
     }
 }
