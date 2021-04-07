@@ -55,7 +55,26 @@
         @include respond(phone){
             width: 30% !important;
         }
-
     }
 
+    &__name {
+        text-transform: uppercase;
+        color: $color-gray-dark;
+        font-size: 2rem;
+        line-height: 1.4;
+        margin-bottom: 0.5rem;
+    }
+
+    &__title {
+        font-size: 1.4rem;
+        line-height: 1.4;
+        color: $color-primary;
+    }
+
+    &__details {
+        font-size: 1.4rem;
+        line-height: 1.4;
+        color: $color-gray-light;
+        text-align: center;
+    }
 }

@@ -17,12 +17,12 @@
             opacity: 0;
             visibility: hidden;
             z-index: 9999;
-            background: rgba($color-blue-light,0.95);
+            background: rgba($color-blue-light,0.97);
             padding: 2rem;
             border-radius: 5px;
             box-shadow: 1px 2px 0.5rem rgba($color-gray,0.2);
             transition: all 0.2s;
-            margin-right: 1rem;
+            margin: 5rem -3rem;
 
         }
         &.visible {
@@ -93,13 +93,11 @@
         z-index: 2000;
         display: flex;
         align-items: top;
+
+        @include respond(phone){
+            right: 6rem;
+        }
     }
-    // &__icon {
-    //     margin: 1.6rem 1.2rem;
-    //     width: 1.8rem;
-    //     height: 1.8rem;
-    //     transition: all 250ms ease;
-    // }
 
 //sticky    
     &__sticky {
