@@ -310,7 +310,7 @@ body {
 .btn:visited,
 input[type=submit] {
   display: inline-block;
-  padding: 0.7rem 1.6rem;
+  padding: 0.8rem 3rem;
   font-weight: 300;
   text-decoration: none;
   border-radius: 7rem;
@@ -329,7 +329,7 @@ input[type=submit] {
 .btn:active,
 input[type=submit]:hover,
 input[type=submit]:active {
-  background-color: #2c3acf; }
+  background-color: #27319b; }
 
 .btn-full:hover,
 .btn-full:active {
@@ -639,7 +639,7 @@ input[type=submit]:active {
           text-align: left; } }
     .header__textbox-text {
       color: #505369;
-      margin-top: 3rem;
+      margin-top: 2rem;
       font-size: 2.2rem;
       line-height: 1.6; }
       @media only screen and (max-width: 75em) {
