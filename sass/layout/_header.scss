@@ -89,7 +89,7 @@
         width: 42%;
         max-height: 80vh;
         position: absolute;
-        bottom: 3%;
+        bottom: 3.5%;
         right: 5%;
 
         @include respond(tab-land) {
@@ -102,6 +102,7 @@
             max-width: 75vw;
             width: auto;
         }
+        
         @include respond(phone) {
             max-height: 60vh;
             max-width: 96vw;
@@ -122,7 +123,7 @@
 
     &__back {
         bottom: 0;
-        background-size: cover;
+        background-size: 103%;
         background-image: url(../img/back.svg);
 
         @include respond(tab-land) {

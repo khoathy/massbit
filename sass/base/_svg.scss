@@ -1,3 +1,33 @@
+.svg-divider {
+    position: absolute;
+    width: 100%;
+    margin: 0;
+    left: 0;
+    right: 0;
+    //z-index: -1; 
+    &--1 {
+        height: 1rem;
+        top: -1rem;
+        fill: $color-white;
+    }
+    &--2 {
+        height: 3rem;
+        top: -3rem;
+        fill: $color-blue-light;
+    }
+    &--3 {
+        height: 3rem;
+        top: -3rem;
+        fill: $color-white;
+    }
+    &--footer {
+        height: 2.5rem;
+        bottom: -2.3rem;
+        fill: $color-white;
+    }
+}
+
+
 #svg {
     &__hero {
         //svg animation

@@ -117,6 +117,29 @@ html {
 ::selection {
   background-color: #86a5fc; }
 
+.svg-divider {
+  position: absolute;
+  width: 100%;
+  margin: 0;
+  left: 0;
+  right: 0; }
+  .svg-divider--1 {
+    height: 1rem;
+    top: -1rem;
+    fill: #fff; }
+  .svg-divider--2 {
+    height: 3rem;
+    top: -3rem;
+    fill: #f1f5ff; }
+  .svg-divider--3 {
+    height: 3rem;
+    top: -3rem;
+    fill: #fff; }
+  .svg-divider--footer {
+    height: 2.5rem;
+    bottom: -2.3rem;
+    fill: #fff; }
+
 #svg__hero .st4,
 #svg__hero .st5,
 #svg__hero .st16 {
@@ -242,23 +265,6 @@ body {
   line-height: 1.4;
   color: #24264b; }
 
-.card__name {
-  text-transform: uppercase;
-  color: #24264b;
-  font-size: 2rem;
-  line-height: 1.4; }
-
-.card__title {
-  font-size: 1.4rem;
-  line-height: 1;
-  color: #2c3acf; }
-
-.card__details {
-  font-size: 1.4rem;
-  line-height: 1.4;
-  color: #717591;
-  text-align: center; }
-
 .u-center-text {
   text-align: center !important; }
 
@@ -376,6 +382,21 @@ input[type=submit]:active {
     @media only screen and (max-width: 37.5em) {
       .card__img {
         width: 30% !important; } }
+  .card__name {
+    text-transform: uppercase;
+    color: #24264b;
+    font-size: 2rem;
+    line-height: 1.4;
+    margin-bottom: 0.5rem; }
+  .card__title {
+    font-size: 1.4rem;
+    line-height: 1.4;
+    color: #2c3acf; }
+  .card__details {
+    font-size: 1.4rem;
+    line-height: 1.4;
+    color: #717591;
+    text-align: center; }
 
 .row {
   display: flex;
@@ -385,6 +406,12 @@ input[type=submit]:active {
   max-width: 120rem;
   width: 100%;
   margin: 12rem auto; }
+  @media only screen and (max-width: 75em) {
+    .row {
+      margin: 8rem auto; } }
+  @media only screen and (max-width: 56.25em) {
+    .row {
+      margin: 6rem auto; } }
   @media only screen and (max-width: 37.5em) {
     .row {
       display: block; } }
@@ -631,7 +658,7 @@ input[type=submit]:active {
     width: 42%;
     max-height: 80vh;
     position: absolute;
-    bottom: 3%;
+    bottom: 3.5%;
     right: 5%; }
     @media only screen and (max-width: 75em) {
       .header__display {
@@ -656,7 +683,7 @@ input[type=submit]:active {
     background-position: 100% 100%; }
   .header__back {
     bottom: 0;
-    background-size: cover;
+    background-size: 103%;
     background-image: url(../img/back.svg); }
     @media only screen and (max-width: 75em) {
       .header__back {
@@ -883,7 +910,6 @@ input[type=submit]:active {
   position: relative;
   margin-bottom: 25rem;
   background-color: #fff;
-  overflow: hidden;
   box-shadow: 1rem 0 1rem rgba(0, 0, 0, 0.2); }
   @media only screen and (max-width: 37.5em) {
     .content {
@@ -943,13 +969,16 @@ input[type=submit]:active {
 .section-experience {
   background-color: #f1f5ff; }
 
-.section-funding {
+.section-funding,
+.section-experience {
   padding-bottom: 10rem; }
   @media only screen and (max-width: 56.25em) {
-    .section-funding {
+    .section-funding,
+    .section-experience {
       padding-bottom: 6rem; } }
   @media only screen and (max-width: 37.5em) {
-    .section-funding {
+    .section-funding,
+    .section-experience {
       padding-bottom: 3rem; } }
 
 .platform-img {
@@ -972,10 +1001,10 @@ input[type=submit]:active {
 
 .decor-right {
   z-index: 10;
-  width: 50vw;
+  width: 40vw;
   position: absolute;
-  bottom: -5rem;
-  right: -25rem;
+  bottom: -2rem;
+  right: 0rem;
   transform-origin: bottom right;
   transition: all 0.5s ease-out; }
   @media only screen and (max-width: 75em) {
