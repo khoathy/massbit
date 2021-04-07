@@ -624,8 +624,8 @@ input[type=submit]:active {
     max-width: 55rem;
     width: fit-content;
     position: absolute;
-    top: 35%;
-    left: 12%;
+    top: 30%;
+    left: 10%;
     transform: translateZ(0); }
     @media only screen and (max-width: 75em) {
       .header__textbox {
@@ -1011,6 +1011,8 @@ input[type=submit]:active {
   right: 0rem;
   transform-origin: bottom right;
   transition: all 0.5s ease-out; }
-  @media only screen and (max-width: 75em) {
+  @media only screen and (max-width: 37.5em) {
     .decor-right {
-      bottom: -15rem; } }
+      width: 90vw;
+      bottom: 0rem;
+      right: 5vw; } }

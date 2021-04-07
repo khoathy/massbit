@@ -72,7 +72,11 @@
     right: 0rem;
     transform-origin: bottom right;
     transition: all 0.5s ease-out;
-    @include respond(tab-land){bottom: -15rem;}
+    @include respond(phone){
+        width: 90vw;
+        bottom: 0rem;
+        right: 5vw;
+    }
 }
 
 // .decor-footer {
