@@ -38,18 +38,6 @@ COLORS:
     stroke-dasharray: 300;
     stroke-dashoffset: 90; } }
 
-@keyframes flash-green {
-  0% {
-    fill: #28E0B0; }
-  49% {
-    fill: #82e4be; }
-  50% {
-    fill: #7be2ad; }
-  99% {
-    fill: #99fdca; }
-  100% {
-    fill: #28E0B0; } }
-
 @keyframes scale {
   0%, 60%, 70%, 80%, 90%, 100% {
     transform: scale(1); }
@@ -72,10 +60,12 @@ COLORS:
     transform: translate(-19px, 5px) rotate(-2deg); } }
 
 @keyframes sparkle {
-  30%, 35% {
-    opacity: 0.6; }
+  35% {
+    opacity: 0.5; }
   45% {
-    opacity: 0.9; } }
+    opacity: 0.9; }
+  25%, 60% {
+    opacity: 1; } }
 
 @keyframes monitor {
   0%, 10%, 100% {
@@ -85,9 +75,9 @@ COLORS:
 
 @keyframes glass {
   0%, 80%, 100% {
-    transform: scale(0.8) translateX(-10px); }
+    transform: scale(0.9); }
   65%, 95% {
-    transform: scale(1); } }
+    transform: scale(1.1); } }
 
 * {
   margin: 0;
@@ -172,7 +162,9 @@ html {
   animation: dash 3.5s linear infinite; }
 
 #svg__outage .outage6 {
-  animation: flash-green 1s linear infinite; }
+  animation: scale 3s linear infinite;
+  transform-box: fill-box;
+  transform-origin: bottom; }
 
 #svg__outage #drop {
   animation: float 1s linear infinite; }
@@ -180,7 +172,11 @@ html {
 #svg__outage #mouth {
   transform-origin: center;
   transform-box: fill-box;
-  animation: scale 5s ease-out infinite; }
+  animation: scale 3s ease-out infinite; }
+
+#svg__outage #slash {
+  animation: sparkle 1s ease-in-out infinite;
+  transform-origin: center; }
 
 #svg__mining #top {
   animation: dig-left 2s linear infinite; }
@@ -191,7 +187,7 @@ html {
   transform-origin: 90% 95%; }
 
 #svg__mining #coins path {
-  animation: sparkle 1.5s ease-in-out infinite; }
+  animation: sparkle 2s ease-in-out infinite; }
 
 #svg__monitor #monitor-top {
   transform-origin: 00% 80%;

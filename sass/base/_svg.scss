@@ -74,7 +74,9 @@
         //     animation: flashing-colors 1s linear infinite;
         // }
         .outage6{
-            animation: flash-green 1s linear infinite;
+            animation: scale 3s linear infinite;
+            transform-box: fill-box;
+            transform-origin: bottom;
         }
         #drop {
             animation: float 1s linear infinite;
@@ -82,7 +84,11 @@
         #mouth {
             transform-origin: center;
             transform-box: fill-box;
-            animation: scale 5s ease-out infinite;
+            animation: scale 3s ease-out infinite;
+        }
+        #slash {
+            animation: sparkle 1s ease-in-out infinite;
+            transform-origin: center;
         }
     }
 
@@ -96,7 +102,7 @@
             transform-origin: 90% 95%;
         }
         #coins path {
-            animation: sparkle 1.5s ease-in-out infinite;
+            animation: sparkle 2s ease-in-out infinite;
         }
     }
 
