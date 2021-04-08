@@ -28,7 +28,7 @@
     }
 }
 
-.section-products,
+.section-platform,
 .section-experience {
     background-color: $color-blue-light;
 }
@@ -54,15 +54,15 @@
     }
 }
 
-.decor-left {
-    width: 8vw;
-    position: absolute;
-    bottom: -15rem;
-    left: -1rem;
-    transform-origin: bottom left;
-    transition: all 0.5s ease-out;
-    transform: rotate(0);
-}
+// .decor-left {
+//     width: 8vw;
+//     position: absolute;
+//     bottom: -15rem;
+//     left: -1rem;
+//     transform-origin: bottom left;
+//     transition: all 0.5s ease-out;
+//     transform: rotate(0);
+// }
 
 .decor-right {
     z-index: 10;

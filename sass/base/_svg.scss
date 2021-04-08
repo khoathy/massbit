@@ -4,7 +4,6 @@
     margin: 0;
     left: 0;
     right: 0;
-    //z-index: -1; 
     &--1 {
         height: 1rem;
         top: -1rem;
@@ -108,15 +107,15 @@
 
     &__monitor {
         #monitor-top {
-            transform-origin: 00% 80%;
+            transform-origin: 0% 80%;
             transform-box: fill-box;
             animation: monitor 3s linear infinite;
         }
         #glass,
         #glass-small {
-            transform-origin: center;
+            transform-origin: 70% 50%;
             transform-box: fill-box;
-            animation: glass 3s ease-in-out infinite;
+            animation: glass 6.1s ease-in-out infinite;
         }
         #glass-small {
             animation-delay: 0.5s;
