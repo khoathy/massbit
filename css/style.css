@@ -789,7 +789,8 @@ input[type=submit]:active {
     right: 8rem;
     z-index: 2000;
     display: flex;
-    align-items: top; }
+    align-items: top;
+    transition: all ease-in 0.2s; }
     @media only screen and (max-width: 37.5em) {
       .nav__right {
         right: 6rem; } }
@@ -799,9 +800,8 @@ input[type=submit]:active {
     box-shadow: 0 1px 1rem rgba(128, 128, 128, 0.2);
     border-bottom-left-radius: 5px; }
   .nav__sticky .nav__logo {
-    height: 5rem;
-    margin-top: 0.5rem;
-    padding: 0.5rem 1rem;
+    height: 3.8rem;
+    margin-top: 1rem;
     background-color: transparent; }
   .nav__sticky .nav__right,
   .nav__sticky .nav__menu {

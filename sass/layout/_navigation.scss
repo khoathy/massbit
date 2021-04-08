@@ -65,7 +65,6 @@
         &:hover {
             color: $color-highlight;
         }
-
     }
 
 //left
@@ -93,6 +92,7 @@
         z-index: 2000;
         display: flex;
         align-items: top;
+        transition: all ease-in 0.2s;
 
         @include respond(phone){
             right: 6rem;
@@ -107,9 +107,8 @@
         border-bottom-left-radius: 5px;
     }  
     &__sticky &__logo{
-        height: 5rem;
-        margin-top: 0.5rem;
-        padding: 0.5rem 1rem;
+        height: 3.8rem;
+        margin-top: 1rem;
         background-color: transparent;
     }
     &__sticky &__right,
