@@ -982,6 +982,10 @@ input[type=submit]:active {
     .section-experience {
       padding-bottom: 3rem; } }
 
+.platform-wrapper {
+  width: 100%;
+  margin: 0 auto; }
+
 .platform-img {
   width: 96%;
   padding: 2rem;
@@ -989,7 +993,8 @@ input[type=submit]:active {
   @media only screen and (max-width: 37.5em) {
     .platform-img {
       width: 100%;
-      padding: 0; } }
+      padding: 0;
+      margin: 0; } }
 
 .decor-right {
   z-index: 10;
