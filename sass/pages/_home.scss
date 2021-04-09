@@ -45,8 +45,8 @@
 }
 
 .platform-img {
-    width: 100%;
-    max-height: 95vh;
+    width: 96%;
+    // max-height: 95vh;
     padding: 2rem;
     text-align: center;
     @include respond(phone) {

@@ -910,6 +910,7 @@ input[type=submit]:active {
   position: relative;
   margin-bottom: 25rem;
   background-color: #fff;
+  overflow: hidden;
   box-shadow: 1rem 0 1rem rgba(0, 0, 0, 0.2); }
   @media only screen and (max-width: 37.5em) {
     .content {
@@ -982,8 +983,7 @@ input[type=submit]:active {
       padding-bottom: 3rem; } }
 
 .platform-img {
-  width: 100%;
-  max-height: 95vh;
+  width: 96%;
   padding: 2rem;
   text-align: center; }
   @media only screen and (max-width: 37.5em) {
