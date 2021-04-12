@@ -910,11 +910,11 @@ input[type=submit]:active {
   position: relative;
   margin-bottom: 25rem;
   background-color: #fff;
-  overflow: hidden;
   box-shadow: 1rem 0 1rem rgba(0, 0, 0, 0.2); }
   @media only screen and (max-width: 37.5em) {
     .content {
-      margin-bottom: 32rem; } }
+      margin-bottom: 32rem;
+      overflow: hidden; } }
 
 .section-about,
 .section-platform,
