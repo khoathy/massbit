@@ -10,9 +10,9 @@ $(document).ready(function(){
             $('.header__middle-1').css({
                 'transform': 'translate(0%, '+ (wScroll/25) +'%)'
             });
-            $('.header__middle-2').css({
-                'transform': 'translate(0%, '+ (wScroll/3) +'%)'
-            });
+            // $('.header__middle-2').css({
+            //     'transform': 'translate(0%, '+ (wScroll/3) +'%)'
+            // });
             $('.header__back').css({
                 'transform': 'translate(0%, '+ wScroll/17 +'%)'
             });
@@ -23,7 +23,6 @@ $(document).ready(function(){
        
     
         // sticky header 
-        
         if(wScroll >= ($('.header__textbox').offset().top - 60)){
             $('.nav').addClass('nav__sticky');
         } else {
