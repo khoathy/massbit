@@ -66,6 +66,14 @@
             stroke-dashoffset: 0;
             animation: dash 3.5s linear infinite;
         }
+
+        //logo plant
+        #plant-1,
+        #plant-2 {
+            transform-box: fill-box;
+            transform-origin: 50% 80%;
+            animation: bloom 7s ease-out infinite;
+        }
     }
 
     &__outage {

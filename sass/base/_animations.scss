@@ -23,6 +23,12 @@
     }
 }
 
+@keyframes bloom {
+    0%, 25%, 72%, 76%, 80%, 90%, 100% {transform :scale(3.5)}
+    30%, 70% {transform :scale(1);} 
+    74%, 78%, 85% {transform :scale(3.7) rotate(2deg)}
+}
+
   
 //Animation for section Why Massbit
 //1-outage animation

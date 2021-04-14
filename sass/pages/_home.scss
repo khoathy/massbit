@@ -44,14 +44,15 @@
     }
 }
 
-.platform-wrapper {
+.platform-wrapper,
+.platform-video {
     width: 100%;
     margin: 0 auto;
 }
 
+.platform-video__content,
 .platform-img {
-    width: 96%;
-    // max-height: 95vh;
+    width: 100%;
     padding: 2rem;
     text-align: center;
     @include respond(phone) {
@@ -60,16 +61,6 @@
         margin: 0;
     }
 }
-
-// .decor-left {
-//     width: 8vw;
-//     position: absolute;
-//     bottom: -15rem;
-//     left: -1rem;
-//     transform-origin: bottom left;
-//     transition: all 0.5s ease-out;
-//     transform: rotate(0);
-// }
 
 .decor-right {
     z-index: 10;
@@ -85,15 +76,3 @@
         right: 5vw;
     }
 }
-
-// .decor-footer {
-//     width: 20rem;
-//     position: absolute;
-//     bottom: -1rem;
-//     right: 2rem;
-//     transform-origin: bottom right;
-//     transition: all 0.5s ease-out;
-//     @include respond(tab-land){bottom: -15rem;}
-// }
-
-

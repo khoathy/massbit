@@ -38,6 +38,14 @@ COLORS:
     stroke-dasharray: 300;
     stroke-dashoffset: 90; } }
 
+@keyframes bloom {
+  0%, 25%, 72%, 76%, 80%, 90%, 100% {
+    transform: scale(3.5); }
+  30%, 70% {
+    transform: scale(1); }
+  74%, 78%, 85% {
+    transform: scale(3.7) rotate(2deg); } }
+
 @keyframes scale {
   0%, 60%, 70%, 80%, 90%, 100% {
     transform: scale(1); }
@@ -160,6 +168,12 @@ html {
   stroke-dasharray: 0;
   stroke-dashoffset: 0;
   animation: dash 3.5s linear infinite; }
+
+#svg__hero #plant-1,
+#svg__hero #plant-2 {
+  transform-box: fill-box;
+  transform-origin: 50% 80%;
+  animation: bloom 7s ease-out infinite; }
 
 #svg__outage .outage6 {
   animation: scale 3s linear infinite;
@@ -433,7 +447,7 @@ input[type=submit]:active {
       .row:last-child {
         margin-bottom: 2.5rem; } }
   .row__img {
-    width: 50%;
+    width: 45%;
     height: auto;
     border-radius: 3rem;
     box-shadow: 0.5rem 3rem 6rem 0rem rgba(39, 49, 155, 0.1); }
@@ -955,15 +969,18 @@ input[type=submit]:active {
     .section-experience {
       padding-bottom: 3rem; } }
 
-.platform-wrapper {
+.platform-wrapper,
+.platform-video {
   width: 100%;
   margin: 0 auto; }
 
+.platform-video__content,
 .platform-img {
-  width: 96%;
+  width: 100%;
   padding: 2rem;
   text-align: center; }
   @media only screen and (max-width: 37.5em) {
+    .platform-video__content,
     .platform-img {
       width: 100%;
       padding: 0;
