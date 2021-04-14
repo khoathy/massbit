@@ -21,7 +21,7 @@
         top: 30%;
         left: 10%;
         transform: translateZ(0);
-        z-index: 10;
+        z-index: 3;
 
         @include respond(tab-land) {
             width: 35vw;
@@ -68,7 +68,7 @@
         position: absolute;
         bottom: 3.5%;
         right: 5%;
-        z-index: 5;
+        z-index: 2;
 
         @include respond(tab-land) {
             width: 55vw;

@@ -632,7 +632,7 @@ input[type=submit]:active {
     top: 30%;
     left: 10%;
     transform: translateZ(0);
-    z-index: 10; }
+    z-index: 3; }
     @media only screen and (max-width: 75em) {
       .header__textbox {
         width: 35vw;
@@ -670,7 +670,7 @@ input[type=submit]:active {
     position: absolute;
     bottom: 3.5%;
     right: 5%;
-    z-index: 5; }
+    z-index: 2; }
     @media only screen and (max-width: 75em) {
       .header__display {
         width: 55vw;
@@ -950,6 +950,9 @@ input[type=submit]:active {
     right: 50%;
     transform: translateX(50%);
     margin-top: 1.6rem; }
+
+.section-about {
+  z-index: 5; }
 
 .section-platform,
 .section-experience {
