@@ -51,9 +51,7 @@
 }
 
 .platform-video {
-    @include respond(phone) {
-        display: none;
-    }
+    @include respond(phone) {display: none;}
 }
 
 .platform-video__content,
