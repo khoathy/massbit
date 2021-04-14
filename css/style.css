@@ -631,7 +631,8 @@ input[type=submit]:active {
     position: absolute;
     top: 30%;
     left: 10%;
-    transform: translateZ(0); }
+    transform: translateZ(0);
+    z-index: 10; }
     @media only screen and (max-width: 75em) {
       .header__textbox {
         width: 35vw;
@@ -668,7 +669,8 @@ input[type=submit]:active {
     max-height: 80vh;
     position: absolute;
     bottom: 3.5%;
-    right: 5%; }
+    right: 5%;
+    z-index: 5; }
     @media only screen and (max-width: 75em) {
       .header__display {
         width: 55vw;
@@ -689,7 +691,8 @@ input[type=submit]:active {
     background-position: 100% 100%;
     bottom: 0;
     background-size: 103%;
-    background-image: url(../img/back.svg); }
+    background-image: url(../img/back.svg);
+    z-index: 0; }
     @media only screen and (max-width: 75em) {
       .header__back {
         background-size: 110%; } }

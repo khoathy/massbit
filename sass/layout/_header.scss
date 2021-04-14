@@ -21,6 +21,7 @@
         top: 30%;
         left: 10%;
         transform: translateZ(0);
+        z-index: 10;
 
         @include respond(tab-land) {
             width: 35vw;
@@ -67,6 +68,7 @@
         position: absolute;
         bottom: 3.5%;
         right: 5%;
+        z-index: 5;
 
         @include respond(tab-land) {
             width: 55vw;
@@ -91,6 +93,7 @@
         bottom: 0;
         background-size: 103%;
         background-image: url(../img/back.svg);
+        z-index: 0;
 
         @include respond(tab-land) {
             background-size: 110%;
