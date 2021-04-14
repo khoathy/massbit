@@ -969,7 +969,7 @@ input[type=submit]:active {
   width: 100%;
   margin: 0 auto; }
 
-@media only screen and (max-width: 37.5em) {
+@media only screen and (max-width: 56.25em) {
   .platform-video {
     display: none; } }
 
@@ -987,7 +987,7 @@ input[type=submit]:active {
 
 #platform-mobile {
   display: none; }
-  @media only screen and (max-width: 37.5em) {
+  @media only screen and (max-width: 56.25em) {
     #platform-mobile {
       display: block; } }
 
