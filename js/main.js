@@ -21,38 +21,12 @@ $(document).ready(function(){
             });
         }
        
-    
         // sticky header 
         if(wScroll >= ($('.header__textbox').offset().top - 60)){
             $('.nav').addClass('nav__sticky');
         } else {
             $('.nav').removeClass('nav__sticky');
         }
-
-
-
-        //decoration animation-left
-        // if(wScroll > $('.section-products').offset().top + $(window).height()/20 && wScroll < $('.section-products').offset().top) { 
-        //     $('.decor-left').css({
-        //         'transform': 'rotate('+(wScroll/20-29) +'deg)'
-        //     });
-        //     console.log("left");
-        if(wScroll > $('.section-team').offset().top - $(window).height()/1.5 && wScroll < $('.section-experience').offset().top) { 
-            $('.decor-left').css({
-                'transform': 'rotate('+(wScroll/20-90) +'deg)'
-            });
-            console.log("left");
-            console.log(wScroll/20-90);
-        
-        };
-
-        //decoration animation-right
-        // if(wScroll > $('.section-team').offset().top - $(window).height()/3 && wScroll < $('.footer').offset().top) {
-        //     $('.decor-right').css({
-        //         'transform': 'rotate('+(-wScroll/30+85) +'deg)'
-        //     });
-        // };
-
     });
 
 

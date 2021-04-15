@@ -4,22 +4,22 @@
 
 @import "base/animations";
 @import "base/base";
-@import "base/svg";
 @import "base/typography";
 @import "base/utilities";
 
 @import "components/button";
 @import "components/card";
 @import "components/row";
-@import "components/grid-item";
 @import "components/brandlist";
 @import "components/list";
+@import "components/svg";
 
 @import "layout/grid";
 @import "layout/header";
 @import "layout/navigation";
 @import "layout/footer";
 @import "layout/content";
+@import "layout/platform";
 
 @import "pages/home";
 

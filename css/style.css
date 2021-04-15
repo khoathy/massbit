@@ -115,108 +115,6 @@ html {
 ::selection {
   background-color: #86a5fc; }
 
-.svg-divider {
-  position: absolute;
-  width: 100%;
-  margin: 0;
-  left: 0;
-  right: 0; }
-  .svg-divider--1 {
-    height: 1rem;
-    top: -1rem;
-    fill: #fff; }
-    @media only screen and (max-width: 37.5em) {
-      .svg-divider--1 {
-        height: 0;
-        top: 0; } }
-  .svg-divider--2 {
-    height: 3rem;
-    top: -3rem;
-    fill: #f1f5ff; }
-    @media only screen and (max-width: 37.5em) {
-      .svg-divider--2 {
-        height: 2rem;
-        top: -2rem; } }
-  .svg-divider--3 {
-    height: 3rem;
-    top: -3rem;
-    fill: #fff; }
-    @media only screen and (max-width: 37.5em) {
-      .svg-divider--3 {
-        height: 2rem;
-        top: -2rem; } }
-  .svg-divider--footer {
-    height: 2.5rem;
-    bottom: -2.3rem;
-    fill: #fff; }
-    @media only screen and (max-width: 37.5em) {
-      .svg-divider--footer {
-        height: 1.2rem;
-        bottom: -1rem; } }
-
-#svg__hero .st4,
-#svg__hero .st5,
-#svg__hero .st16 {
-  transform-origin: center;
-  animation: float 5s linear infinite; }
-
-#svg__hero .st7 {
-  stroke: #23C479;
-  animation: flash 3.5s ease-in-out infinite; }
-
-#svg__hero .st8 {
-  stroke-dasharray: 0;
-  stroke-dashoffset: 0;
-  animation: dash 3.5s linear infinite; }
-
-#svg__hero #plant-1,
-#svg__hero #plant-2 {
-  transform-box: fill-box;
-  transform-origin: 50% 80%;
-  animation: bloom 7s ease-out infinite; }
-
-#svg__outage .outage6 {
-  animation: scale 3s linear infinite;
-  transform-box: fill-box;
-  transform-origin: bottom; }
-
-#svg__outage #drop {
-  animation: float 1s linear infinite; }
-
-#svg__outage #mouth {
-  transform-origin: center;
-  transform-box: fill-box;
-  animation: scale 3s ease-out infinite; }
-
-#svg__outage #slash {
-  animation: sparkle 1s ease-in-out infinite;
-  transform-origin: center; }
-
-#svg__mining #top {
-  animation: dig-left 2s linear infinite; }
-
-#svg__mining #man-large {
-  animation: rotate-left 2s ease-in-out infinite;
-  transform: translate(-19px, 5px);
-  transform-origin: 90% 95%; }
-
-#svg__mining #coins path {
-  animation: sparkle 2s ease-in-out infinite; }
-
-#svg__monitor #monitor-top {
-  transform-origin: 0% 80%;
-  transform-box: fill-box;
-  animation: monitor 3s linear infinite; }
-
-#svg__monitor #glass,
-#svg__monitor #glass-small {
-  transform-origin: 70% 50%;
-  transform-box: fill-box;
-  animation: glass 6.1s ease-in-out infinite; }
-
-#svg__monitor #glass-small {
-  animation-delay: 0.5s; }
-
 body {
   font-family: 'Quicksand', sans-serif;
   font-weight: 500;
@@ -462,53 +360,6 @@ input[type=submit]:active {
       .row__text {
         width: 100%; } }
 
-@media only screen and (max-width: 37.5em) {
-  .grid-item:not(:last-child) {
-    margin-bottom: 2.5rem; } }
-
-.grid-item__wrapper {
-  margin: 4rem; }
-  .grid-item__wrapper img {
-    border-radius: 3rem; }
-  @media only screen and (max-width: 37.5em) {
-    .grid-item__wrapper {
-      margin: 1.5rem; } }
-
-.grid-figure {
-  position: relative;
-  transition: all 0.5s ease-in-out;
-  overflow: hidden;
-  cursor: pointer;
-  margin: 2.5rem; }
-  .grid-figure figcaption {
-    position: absolute;
-    bottom: 2rem;
-    left: 0;
-    max-width: 90%;
-    padding: 1rem;
-    background: rgba(80, 83, 105, 0.8);
-    transform: translateX(-120%);
-    transition: all 0.4s ease-in-out; }
-    @media only screen and (max-width: 37.5em) {
-      .grid-figure figcaption {
-        transform: translateX(0);
-        position: relative;
-        bottom: -100%;
-        max-width: 100%;
-        text-align: center;
-        font-size: 100%; } }
-  .grid-figure img {
-    width: 100%;
-    display: block;
-    transition: all 0.4s ease-in-out; }
-  .grid-figure:hover figcaption {
-    transform: translateX(0); }
-  .grid-figure:hover img {
-    transform: scale(1.1); }
-    @media only screen and (max-width: 56.25em) {
-      .grid-figure:hover img {
-        transform: none; } }
-
 .brand {
   display: flex;
   align-items: center;
@@ -556,6 +407,108 @@ input[type=submit]:active {
       left: 0;
       top: 1.2rem;
       background: #86a5fc; }
+
+.svg-divider {
+  position: absolute;
+  width: 100%;
+  margin: 0;
+  left: 0;
+  right: 0; }
+  .svg-divider--1 {
+    height: 1rem;
+    top: -1rem;
+    fill: #fff; }
+    @media only screen and (max-width: 37.5em) {
+      .svg-divider--1 {
+        height: 0;
+        top: 0; } }
+  .svg-divider--2 {
+    height: 3rem;
+    top: -3rem;
+    fill: #f1f5ff; }
+    @media only screen and (max-width: 37.5em) {
+      .svg-divider--2 {
+        height: 2rem;
+        top: -2rem; } }
+  .svg-divider--3 {
+    height: 3rem;
+    top: -3rem;
+    fill: #fff; }
+    @media only screen and (max-width: 37.5em) {
+      .svg-divider--3 {
+        height: 2rem;
+        top: -2rem; } }
+  .svg-divider--footer {
+    height: 2.5rem;
+    bottom: -2.3rem;
+    fill: #fff; }
+    @media only screen and (max-width: 37.5em) {
+      .svg-divider--footer {
+        height: 1.2rem;
+        bottom: -1rem; } }
+
+#svg__hero .st4,
+#svg__hero .st5,
+#svg__hero .st16 {
+  transform-origin: center;
+  animation: float 5s linear infinite; }
+
+#svg__hero .st7 {
+  stroke: #23C479;
+  animation: flash 3.5s ease-in-out infinite; }
+
+#svg__hero .st8 {
+  stroke-dasharray: 0;
+  stroke-dashoffset: 0;
+  animation: dash 3.5s linear infinite; }
+
+#svg__hero #plant-1,
+#svg__hero #plant-2 {
+  transform-box: fill-box;
+  transform-origin: 50% 80%;
+  animation: bloom 7s ease-out infinite; }
+
+#svg__outage .outage6 {
+  animation: scale 3s linear infinite;
+  transform-box: fill-box;
+  transform-origin: bottom; }
+
+#svg__outage #drop {
+  animation: float 1s linear infinite; }
+
+#svg__outage #mouth {
+  transform-origin: center;
+  transform-box: fill-box;
+  animation: scale 3s ease-out infinite; }
+
+#svg__outage #slash {
+  animation: sparkle 1s ease-in-out infinite;
+  transform-origin: center; }
+
+#svg__mining #top {
+  animation: dig-left 2s linear infinite; }
+
+#svg__mining #man-large {
+  animation: rotate-left 2s ease-in-out infinite;
+  transform: translate(-19px, 5px);
+  transform-origin: 90% 95%; }
+
+#svg__mining #coins path {
+  animation: sparkle 2s ease-in-out infinite; }
+
+#svg__monitor #monitor-top {
+  transform-origin: 0% 80%;
+  transform-box: fill-box;
+  animation: monitor 3s linear infinite; }
+
+#svg__monitor #glass,
+#svg__monitor #glass-small {
+  transform-origin: 70% 50%;
+  transform-box: fill-box;
+  animation: glass 6.1s ease-in-out infinite; }
+
+#svg__monitor #glass-small {
+  animation-delay: 0.5s; }
 
 .grid {
   max-width: 120rem;
@@ -765,9 +718,12 @@ input[type=submit]:active {
     height: 4rem;
     margin: 2rem 8rem;
     transition: all ease-in 0.2s; }
+    @media only screen and (max-width: 56.25em) {
+      .nav__logo {
+        margin: 2rem 9rem; } }
     @media only screen and (max-width: 37.5em) {
       .nav__logo {
-        margin: 2rem 6rem; } }
+        margin: 2rem 5rem; } }
   .nav__right {
     position: fixed;
     top: 1rem;
@@ -776,9 +732,12 @@ input[type=submit]:active {
     display: flex;
     align-items: top;
     transition: all ease-in 0.2s; }
+    @media only screen and (max-width: 56.25em) {
+      .nav__right {
+        right: 9rem; } }
     @media only screen and (max-width: 37.5em) {
       .nav__right {
-        right: 6rem; } }
+        right: 5rem; } }
   .nav__sticky {
     position: fixed;
     background-color: rgba(255, 255, 255, 0.95);
@@ -901,6 +860,33 @@ input[type=submit]:active {
       margin-bottom: 32rem;
       overflow: hidden; } }
 
+.platform-wrapper,
+.platform-video {
+  width: 100%;
+  margin: 0 auto; }
+
+@media only screen and (max-width: 56.25em) {
+  .platform-video {
+    display: none; } }
+
+.platform-video__content,
+.platform-img {
+  width: 100%;
+  padding: 2rem;
+  text-align: center; }
+  @media only screen and (max-width: 37.5em) {
+    .platform-video__content,
+    .platform-img {
+      width: 100%;
+      padding: 0;
+      margin: 0; } }
+
+#platform-mobile {
+  display: none; }
+  @media only screen and (max-width: 56.25em) {
+    #platform-mobile {
+      display: block; } }
+
 .section-about,
 .section-platform,
 .section-products,
@@ -969,44 +955,3 @@ input[type=submit]:active {
     .section-funding,
     .section-experience {
       padding-bottom: 3rem; } }
-
-.platform-wrapper,
-.platform-video {
-  width: 100%;
-  margin: 0 auto; }
-
-@media only screen and (max-width: 56.25em) {
-  .platform-video {
-    display: none; } }
-
-.platform-video__content,
-.platform-img {
-  width: 100%;
-  padding: 2rem;
-  text-align: center; }
-  @media only screen and (max-width: 37.5em) {
-    .platform-video__content,
-    .platform-img {
-      width: 100%;
-      padding: 0;
-      margin: 0; } }
-
-#platform-mobile {
-  display: none; }
-  @media only screen and (max-width: 56.25em) {
-    #platform-mobile {
-      display: block; } }
-
-.decor-right {
-  z-index: 10;
-  width: 40vw;
-  position: absolute;
-  bottom: -2rem;
-  right: 0rem;
-  transform-origin: bottom right;
-  transition: all 0.5s ease-out; }
-  @media only screen and (max-width: 37.5em) {
-    .decor-right {
-      width: 90vw;
-      bottom: 0rem;
-      right: 5vw; } }
