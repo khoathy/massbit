@@ -112,9 +112,6 @@ html {
     html {
       font-size: 75%; } }
 
-::selection {
-  background-color: #86a5fc; }
-
 body {
   font-family: 'Quicksand', sans-serif;
   font-weight: 500;
