@@ -444,6 +444,21 @@ input[type=submit]:active {
         height: 1.2rem;
         bottom: -1rem; } }
 
+#logo-w:hover .logo-w1 {
+  fill: #a6b2c7; }
+
+#logo-w:hover .logo-w2 {
+  stroke: #a6b2c7; }
+
+#logo-w .logo-w1 {
+  fill: #FFFFFF; }
+
+#logo-w .logo-w2 {
+  fill: none;
+  stroke: #FFFFFF;
+  stroke-width: 18;
+  stroke-miterlimit: 10; }
+
 #svg__hero .st0 {
   fill: #23C479; }
 

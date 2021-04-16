@@ -42,6 +42,19 @@
     }
 }
 
+#logo-w {
+    &:hover .logo-w1 {fill: $color-blue;}
+    &:hover .logo-w2 {stroke: $color-blue;}
+
+    .logo-w1 {fill:#FFFFFF;}
+
+    .logo-w2 {
+        fill: none;
+        stroke: #FFFFFF;
+        stroke-width: 18;
+        stroke-miterlimit: 10;
+    }
+}
 
 #svg {
     &__hero {
