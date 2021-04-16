@@ -31,7 +31,7 @@
     }
     
     &__text {
-        width: 42%;
+        width: 45%;
 
         @include respond(phone) {width: 100%;}
     }

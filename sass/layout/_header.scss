@@ -16,7 +16,7 @@
     }
 
     &__textbox {
-        max-width: 55rem;
+        max-width: 40vw;
         width: fit-content;
         position: absolute;
         top: 30%;
@@ -50,7 +50,7 @@
         &-text {
             color: $color-gray;
             margin-top: 2rem;
-            font-size: 2.2rem;
+            font-size: 2rem;
             line-height: 1.6;
 
             @include respond(tab-land) {
@@ -66,7 +66,7 @@
     }
 
     &__display {
-        width: 42%;
+        width: 40vw;
         max-height: 80vh;
         position: absolute;
         bottom: 3.5%;
