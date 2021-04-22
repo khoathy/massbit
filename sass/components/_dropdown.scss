@@ -1,0 +1,91 @@
+.dropdown {
+    position: relative;
+    display: flex;
+    align-items: center;
+
+    @include respond(tab-port){
+        display: block;
+    }
+
+
+    &__icon {
+        margin-left: 0.5rem;
+        @include respond(tab-port){
+            margin-bottom: -1rem;
+        }
+
+        &--active {
+            transform: rotate(180deg);
+            -webkit-transform: rotate(180deg);
+            -moz-transform: rotate(180deg);
+            -ms-transform: rotate(180deg);
+            -o-transform: rotate(180deg);
+        }
+    }
+
+    &__list {
+        visibility: hidden;
+        opacity: 0;
+        display: none;
+        transform: none;
+        position: absolute;
+        top: 100%;
+        left: -3rem;
+        z-index: 9999;
+        background: $color-blue-light;
+        padding: 1rem 1rem 1.5rem;
+        box-shadow: 1px 2px 0.5rem rgba($color-gray,0.2);
+        width: fit-content;
+        border-radius: 0.5rem;
+        -webkit-border-radius: 0.5rem;
+        -moz-border-radius: 0.5rem;
+        -ms-border-radius: 0.5rem;
+        -o-border-radius: 0.5rem;
+        transition: all 0.2s;
+        transform: rotateX(-25deg) translateZ(0px);
+        -webkit-transform: rotateX(-25deg) translateZ(0px);
+        -moz-transform: rotateX(-25deg) translateZ(0px);
+        -ms-transform: rotateX(-25deg) translateZ(0px);
+        -o-transform: rotateX(-25deg) translateZ(0px);
+
+        @include respond(tab-port){
+            box-shadow: none;
+            position: relative;
+        }
+
+        &-visible {
+            visibility: visible;
+            opacity: 1;
+            display: block;
+            transform: none;
+            -moz-transform: none;
+            -ms-transform: none;
+            -o-transform: none;
+            -webkit-transform: none;
+        }
+    }
+
+    &__item {
+        list-style: none;
+        padding: 0.5rem 2rem;
+        white-space: nowrap;
+
+        @include respond(tab-port){
+            text-align: left;
+            margin-left: 2rem;
+        }
+    }
+
+    &__link {
+        text-transform: capitalize;
+        font-weight: 400;
+        text-decoration: none;
+        color: $color-gray;
+        font-size: 1.6rem;
+
+        &:hover {
+            color: $color-primary;
+        }
+
+    }
+}

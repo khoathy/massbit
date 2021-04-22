@@ -1,47 +1,3 @@
-.svg-divider {
-    position: absolute;
-    width: 100%;
-    margin: 0;
-    left: 0;
-    right: 0;
-    &--1 {
-        height: 1rem;
-        top: -1rem;
-        fill: $color-white;
-        @include respond(phone){
-            height: 0;
-            top: 0;
-        }
-    }
-    &--2 {
-        height: 3rem;
-        top: -3rem;
-        fill: $color-blue-light;
-        @include respond(phone){
-            height: 2rem;
-            top: -2rem;
-        }
-    }
-    &--3 {
-        height: 3rem;
-        top: -3rem;
-        fill: $color-white;
-        @include respond(phone){
-            height: 2rem;
-            top: -2rem;
-        }
-    }
-    &--footer {
-        height: 2.5rem;
-        bottom: -2.3rem;
-        fill: $color-white;
-        @include respond(phone){
-            height: 1.2rem;
-            bottom: -1rem;
-        }
-    }
-}
-
 #logo-w {
     &:hover .logo-w1 {fill: $color-blue;}
     &:hover .logo-w2 {stroke: $color-blue;}
@@ -64,7 +20,8 @@
     stroke-linejoin:round;
     stroke-miterlimit:10;
     transform-origin: center;
-    animation: dig-left 1s linear infinite;
+    -webkit-animation: dig-left 1s linear infinite;
+            animation: dig-left 1s linear infinite;
 }
                               
 
@@ -102,20 +59,23 @@
         .st5, 
         .st16 {
             transform-origin: center;
-            animation: float 5s linear infinite;
+            -webkit-animation: float 5s linear infinite;
+                    animation: float 5s linear infinite;
         }
 
         //color-changing link
         .st7 {
             stroke: #23C479;
-            animation: flash 3.5s ease-in-out infinite;
+            -webkit-animation: flash 3.5s ease-in-out infinite;
+                    animation: flash 3.5s ease-in-out infinite;
         }
 
         //dashing link
         .st8 {
             stroke-dasharray: 0;
             stroke-dashoffset: 0;
-            animation: dash 3.5s linear infinite;
+            -webkit-animation: dash 3.5s linear infinite;
+                    animation: dash 3.5s linear infinite;
         }
 
         //logo plant
@@ -123,7 +83,8 @@
         #plant-2 {
             transform-box: fill-box;
             transform-origin: 50% 80%;
-            animation: bloom 7s ease-out infinite;
+            -webkit-animation: bloom 7s ease-out infinite;
+                    animation: bloom 7s ease-out infinite;
         }
     }
 
@@ -142,23 +103,27 @@
 
         //animation
         .outage6{
-            animation: scale 3s linear infinite;
+            -webkit-animation: scale 3s linear infinite;
+                    animation: scale 3s linear infinite;
             transform-box: fill-box;
             transform-origin: bottom;
         }
 
         #drop {
-            animation: float 1s linear infinite;
+            -webkit-animation: float 1s linear infinite;
+                    animation: float 1s linear infinite;
         }
 
         #mouth {
             transform-origin: center;
             transform-box: fill-box;
-            animation: scale 3s ease-out infinite;
+            -webkit-animation: scale 3s ease-out infinite;
+                    animation: scale 3s ease-out infinite;
         }
 
         #slash {
-            animation: sparkle 1s ease-in-out infinite;
+            -webkit-animation: sparkle 1s ease-in-out infinite;
+                    animation: sparkle 1s ease-in-out infinite;
             transform-origin: center;
         }
     }
@@ -179,17 +144,20 @@
 
         //animation
         #top {
-            animation: dig-left 2s linear infinite;
+            -webkit-animation: dig-left 2s linear infinite;
+                    animation: dig-left 2s linear infinite;
         }
 
         #man-large {
-            animation: rotate-left 2s ease-in-out infinite;
+            -webkit-animation: rotate-left 2s ease-in-out infinite;
+                    animation: rotate-left 2s ease-in-out infinite;
             transform: translate(-19px, 5px);
             transform-origin: 90% 95%;
         }
 
         #coins path {
-            animation: sparkle 2s ease-in-out infinite;
+            -webkit-animation: sparkle 2s ease-in-out infinite;
+                    animation: sparkle 2s ease-in-out infinite;
         }
     }
 
@@ -213,18 +181,21 @@
         #monitor-top {
             transform-origin: 0% 80%;
             transform-box: fill-box;
-            animation: monitor 3s linear infinite;
+            -webkit-animation: monitor 3s linear infinite;
+                    animation: monitor 3s linear infinite;
         }
 
         #glass,
         #glass-small {
             transform-origin: 70% 50%;
             transform-box: fill-box;
-            animation: glass 6.1s ease-in-out infinite;
+            -webkit-animation: glass 6.1s ease-in-out infinite;
+                    animation: glass 6.1s ease-in-out infinite;
         }
         
         #glass-small {
-            animation-delay: 0.5s;
+            -webkit-animation-delay: 0.5s;
+                    animation-delay: 0.5s;
         }
     }
 }

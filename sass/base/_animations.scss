@@ -1,4 +1,13 @@
 //animation for hero image
+@-webkit-keyframes flash {
+    0%        {stroke: #f95860;}
+    20%       {stroke: #2C3ACF;}
+    30%, 100% {
+        stroke: #23C479;
+        stroke-width: 2;
+    }
+}
+
 @keyframes flash {
     0%        {stroke: #f95860;}
     20%       {stroke: #2C3ACF;}
@@ -6,6 +15,14 @@
         stroke: #23C479;
         stroke-width: 2;
     }
+}
+  
+@-webkit-keyframes float {
+    0%   {transform: translateY(0) scale(1)}
+    25%  {transform: translateY(-2px)}
+    50%  {transform: scale(1.005);}
+    75%  {transform: translateY(8px);}
+    100% {transform: translateY(0)}
 }
   
 @keyframes float {
@@ -16,11 +33,24 @@
     100% {transform: translateY(0)}
 }
           
+@-webkit-keyframes dash {
+    100% {
+        stroke-dasharray: 300;
+        stroke-dashoffset: 90;
+    }
+}
+          
 @keyframes dash {
     100% {
         stroke-dasharray: 300;
         stroke-dashoffset: 90;
     }
+}
+
+@-webkit-keyframes bloom {
+    0%, 25%, 72%, 76%, 80%, 90%, 100% {transform :scale(3.5)}
+    30%, 70% {transform :scale(1);} 
+    74%, 78%, 85% {transform :scale(3.7) rotate(2deg)}
 }
 
 @keyframes bloom {
@@ -33,6 +63,12 @@
 //Animation for section Why Massbit
 //1-outage animation
 //cry animation
+@-webkit-keyframes scale {
+    0%, 60%, 70%, 80%, 90%, 100% {transform :scale(1)}
+    20%, 50% {transform :scale(0.2);} 
+    55%, 65%, 75%, 85%, 95% {transform :scale(1.2)}
+}
+
 @keyframes scale {
     0%, 60%, 70%, 80%, 90%, 100% {transform :scale(1)}
     20%, 50% {transform :scale(0.2);} 
@@ -41,6 +77,16 @@
 
 //2- Data-mining animation
 //data-mining animation: top
+@-webkit-keyframes dig-left {
+    30% {
+        transform-origin: 55% 70%;
+        transform : translate(3px,10px) rotate(-3deg);
+    }
+    70% {
+        transform : translate(2px,2px) rotate(-2deg);
+    }
+}
+
 @keyframes dig-left {
     30% {
         transform-origin: 55% 70%;
@@ -52,6 +98,13 @@
 } 
 
 //data-mining animation: body
+@-webkit-keyframes rotate-left {
+    0%, 100% {transform: translate(-19px,5px);}
+    20%, 70% {
+        transform : translate(-19px,5px) rotate(-2deg);
+    }
+}
+
 @keyframes rotate-left {
     0%, 100% {transform: translate(-19px,5px);}
     20%, 70% {
@@ -60,6 +113,13 @@
 }
 
 //data-mining animation: coin
+@-webkit-keyframes sparkle {
+    35%  {opacity: 0.5;}
+    45%  {opacity: 0.9;}
+    25%, 60% {opacity: 1;}
+    
+}
+
 @keyframes sparkle {
     35%  {opacity: 0.5;}
     45%  {opacity: 0.9;}
@@ -68,11 +128,23 @@
 }
 
 //3- Monitor animation
+@-webkit-keyframes monitor {
+    0%, 10%, 100% {transform: translateY(0px) rotate(-1deg);}
+    60%, 70%  {
+        transform : translateY(-16px) rotate(8deg);
+    }
+}
+
 @keyframes monitor {
     0%, 10%, 100% {transform: translateY(0px) rotate(-1deg);}
     60%, 70%  {
         transform : translateY(-16px) rotate(8deg);
     }
+}
+
+@-webkit-keyframes glass {
+    0%, 50%, 100% {transform :scale(1)}
+    35%, 75% {transform :scale(0.75) translate(-3rem, -1rem)}
 }
 
 @keyframes glass {

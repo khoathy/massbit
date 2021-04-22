@@ -17,28 +17,34 @@
             opacity: 0;
             visibility: hidden;
             z-index: 9999;
-            background: rgba($color-blue-light,0.97);
+            background: $color-blue-light;
             padding: 2rem;
-            border-radius: 5px;
+            border-radius: 0.5rem;
             box-shadow: 1px 2px 0.5rem rgba($color-gray,0.2);
             transition: all 0.2s;
             margin: 5rem -3rem;
-
-        }
+            -webkit-border-radius: 0.5rem;
+            -moz-border-radius: 0.5rem;
+            -ms-border-radius: 0.5rem;
+            -o-border-radius: 0.5rem;
+}
         &.visible {
             opacity: 1;
             visibility: visible;
+            min-width: 28rem;
         }
     }
 
     &__item {
         list-style: none;
         display: inline-block;
-        transform-origin: bottom;
-        transition: 0.2s ease-in;
 
         &:not(:last-child){ 
             margin-right: 3rem;
+        }
+
+        &:hover .dropdown__icon {
+            fill: $color-primary;
         }
 
         @include respond(tab-port){
@@ -49,9 +55,6 @@
                 margin-bottom: 2rem;
                 margin-right: 2rem;
             }
-        }
-        &:hover {
-            transform: scale(1.02);
         }
     }
 
@@ -66,7 +69,7 @@
         transition: all 0.2s ease-in;
 
         &:hover {
-            color: $color-highlight;
+            color: $color-primary;
         }
     }
 
