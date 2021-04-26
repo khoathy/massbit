@@ -15,7 +15,11 @@
         display: inline-block;
     
         @include respond(tab-port){
-            margin-bottom: -1rem;
+            margin-bottom: -2px;
+        }
+
+        @include respond(phone){
+            margin-bottom: 0;
         }
 
         &--active {
@@ -81,7 +85,6 @@
 
         @include respond(tab-port){
             text-align: left;
-            margin-left: 2rem;
         }
     }
 
