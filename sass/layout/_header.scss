@@ -2,6 +2,7 @@
     position: relative;
     height: 95vh;
     overflow: hidden;
+    background-color: $color-blue-light;
 
     @include respond(tab-port) {
         padding-top: 20rem;
@@ -19,7 +20,7 @@
         max-width: 40vw;
         width: fit-content;
         position: absolute;
-        top: 30%;
+        top: 35%;
         left: 10%;
         transform: translateZ(0);
         z-index: 3;
@@ -49,7 +50,7 @@
 
         &-text {
             color: $color-gray;
-            margin-top: 2rem;
+            margin-top: 3rem;
             font-size: 2rem;
             line-height: 1.6;
 

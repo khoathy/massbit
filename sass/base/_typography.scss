@@ -79,6 +79,15 @@ body {
     @include respond(phone){
         width: 100%;
     }
+
+    &-short {
+        width: 55vw;
+        margin: 1rem auto;
+
+        @include respond(tab-port){
+            width: 100%;
+        }
+    }
 }
 
 .caption {

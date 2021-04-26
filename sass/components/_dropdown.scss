@@ -86,11 +86,15 @@
     }
 
     &__link {
-        text-transform: capitalize;
+        text-transform: unset;
         font-weight: 400;
         text-decoration: none;
         color: $color-gray;
         font-size: 1.6rem;
+
+        &:first-letter {
+            text-transform: uppercase;
+        }
 
         &:hover {
             color: $color-primary;
