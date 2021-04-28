@@ -586,7 +586,7 @@ input[type=submit]:active {
   fill: #F95860; }
 
 #svg__hero .st4 {
-  fill: #F5FAFF;
+  fill: #fcfcfc;
   stroke: #DAEAFF;
   stroke-width: 3;
   stroke-linecap: round;
@@ -1299,7 +1299,6 @@ input[type=submit]:active {
 
 .section-about,
 .section-platform,
-.section-products,
 .section-team,
 .section-funding,
 .section-experience {
@@ -1308,7 +1307,6 @@ input[type=submit]:active {
   @media only screen and (max-width: 75em) {
     .section-about,
     .section-platform,
-    .section-products,
     .section-team,
     .section-funding,
     .section-experience {
@@ -1316,7 +1314,6 @@ input[type=submit]:active {
   @media only screen and (max-width: 56.25em) {
     .section-about,
     .section-platform,
-    .section-products,
     .section-team,
     .section-funding,
     .section-experience {
@@ -1324,31 +1321,39 @@ input[type=submit]:active {
   @media only screen and (max-width: 37.5em) {
     .section-about,
     .section-platform,
-    .section-products,
     .section-team,
     .section-funding,
     .section-experience {
       padding: 4rem; } }
   .section-about .row,
   .section-platform .row,
-  .section-products .row,
   .section-team .row,
   .section-funding .row,
   .section-experience .row {
     position: relative; }
   .section-about .btn,
   .section-platform .btn,
-  .section-products .btn,
   .section-team .btn,
   .section-funding .btn,
   .section-experience .btn {
     position: absolute;
     right: 50%;
     transform: translateX(50%);
-    margin-top: 1.6rem; }
+    margin-top: 1.6rem;
+    -webkit-transform: translateX(50%);
+    -moz-transform: translateX(50%);
+    -ms-transform: translateX(50%);
+    -o-transform: translateX(50%); }
+
+.section-platform,
+.section-team,
+.section-funding,
+.section-experience {
+  z-index: 7; }
 
 .section-about {
-  z-index: 5; }
+  z-index: 5;
+  background-color: #fff; }
 
 .section-platform,
 .section-experience {

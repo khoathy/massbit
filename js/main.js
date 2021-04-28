@@ -7,22 +7,22 @@ $(document).ready(function(){
         //parallax header
         var wScroll = $(this).scrollTop();
         if(wScroll <= containerHeight) {
-            $('.header__middle-1').css({
-                'transform': 'translate(0%, '+ (wScroll/25) +'%)'
+            $('.header__middle-svg').css({
+                'transform': 'translate(0%, '+ (wScroll/15) +'%)'
             });
-            // $('.header__middle-2').css({
-            //     'transform': 'translate(0%, '+ (wScroll/3) +'%)'
+            $('.header__middle').css({
+                'transform': 'translate(0%, '+ (wScroll/8) +'%)'
+            });
+            // $('.header__back').css({
+            //     'transform': 'translate(0%, '+ wScroll/17 +'%)'
             // });
-            $('.header__back').css({
-                'transform': 'translate(0%, '+ wScroll/17 +'%)'
-            });
-            $('.header__fore').css({
-                'transform': 'translate(0%, -'+ wScroll/70 +'%)'
-            });
+            // $('.header__fore').css({
+            //     'transform': 'translate(0%, -'+ wScroll/70 +'%)'
+            // });
         }
        
         // sticky header 
-        if(wScroll >= ($('.header__textbox').offset().top - 60)){
+        if(wScroll >= 80){
             $('.nav').addClass('nav__sticky');
         } else {
             $('.nav').removeClass('nav__sticky');

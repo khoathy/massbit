@@ -1,6 +1,5 @@
 .section-about,
 .section-platform,
-.section-products,
 .section-team,
 .section-funding,
 .section-experience {
@@ -26,10 +25,24 @@
         right: 50%;
         transform: translateX(50%);
         margin-top: 1.6rem;
+        -webkit-transform: translateX(50%);
+        -moz-transform: translateX(50%);
+        -ms-transform: translateX(50%);
+        -o-transform: translateX(50%);
     }
 }
 
-.section-about {z-index: 5;}
+.section-platform, 
+.section-team,
+.section-funding,
+.section-experience {
+    z-index: 7;
+}
+
+.section-about {
+    z-index: 5;
+    background-color: $color-white;
+}
 
 .section-platform,
 .section-experience {background-color: $color-blue-light;}
