@@ -984,11 +984,11 @@ input[type=submit]:active {
       height: 100vh;
       padding-top: 12rem; } }
   .header__textbox {
-    max-width: 40vw;
+    max-width: 38vw;
     width: fit-content;
     position: absolute;
     top: 35%;
-    left: 10%;
+    left: 12%;
     transform: translateZ(0);
     z-index: 3; }
     @media only screen and (max-width: 75em) {
@@ -1024,7 +1024,7 @@ input[type=submit]:active {
           font-size: 2rem; } }
   .header__display {
     width: 40vw;
-    max-height: 80vh;
+    max-height: 75vh;
     position: absolute;
     bottom: 3.5%;
     right: 5%;
@@ -1124,7 +1124,7 @@ input[type=submit]:active {
     z-index: 2000; }
   .nav__logo {
     height: 4rem;
-    margin: 2rem 8rem;
+    margin: 2rem 9rem;
     transition: all ease-in 0.2s; }
     .nav__logo:hover {
       transform: translateY(-2px); }

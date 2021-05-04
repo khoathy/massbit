@@ -4,22 +4,23 @@ $(document).ready(function(){
     var containerHeight = $('.header').height();
 
     $(window).scroll(function(){
-        //parallax header
-        var wScroll = $(this).scrollTop();
-        if(wScroll <= containerHeight) {
-            $('.header__middle-svg').css({
-                'transform': 'translate(0%, '+ (wScroll/15) +'%)'
-            });
-            $('.header__middle').css({
-                'transform': 'translate(0%, '+ (wScroll/8) +'%)'
-            });
-            // $('.header__back').css({
-            //     'transform': 'translate(0%, '+ wScroll/17 +'%)'
-            // });
-            // $('.header__fore').css({
-            //     'transform': 'translate(0%, -'+ wScroll/70 +'%)'
-            // });
-        }
+    var wScroll = $(this).scrollTop();
+        
+    //parallax header    
+        // if(wScroll <= containerHeight) {
+        //     $('.header__middle-svg').css({
+        //         'transform': 'translate(0%, '+ (wScroll/15) +'%)'
+        //     });
+        //     $('.header__middle').css({
+        //         'transform': 'translate(0%, '+ (wScroll/8) +'%)'
+        //     });
+        //     // $('.header__back').css({
+        //     //     'transform': 'translate(0%, '+ wScroll/17 +'%)'
+        //     // });
+        //     // $('.header__fore').css({
+        //     //     'transform': 'translate(0%, -'+ wScroll/70 +'%)'
+        //     // });
+        // }
        
         // sticky header 
         if(wScroll >= 80){
@@ -44,16 +45,8 @@ $(document).ready(function(){
     });
 
     //dropdown modal
-    $('.dropdown__icon, .dropdown__title').click(function(){
-        var current = $(this).closest('li').find('.dropdown__list');
-        $('body').find('.dropdown__list').removeClass('dropdown__list-visible');
+    $('.dropdown').hover(function() {
+        var current = $(this).find('.dropdown__list');
         current.toggleClass('dropdown__list-visible');
-    });
-        
-    $(document).click(function(event) {
-        //if click on anything except the modal itself or the "open modal" icon, close the modal
-        if (!$(event.target).closest('.dropdown__title, .dropdown__icon').length) {
-            $('body').find('.dropdown__list').removeClass('dropdown__list-visible');
-        }
     });
 });
