@@ -6,7 +6,7 @@ $(document).ready(function(){
     $(window).scroll(function(){
     var wScroll = $(this).scrollTop();
         
-    //parallax header    
+        //parallax header    
         // if(wScroll <= containerHeight) {
         //     $('.header__middle-svg').css({
         //         'transform': 'translate(0%, '+ (wScroll/15) +'%)'

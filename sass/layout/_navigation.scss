@@ -27,12 +27,15 @@
             -moz-border-radius: 0.5rem;
             -ms-border-radius: 0.5rem;
             -o-border-radius: 0.5rem;
+            position: fixed;
+            top: 1.5rem;
+            left: 10vw;
+            right: 10vw;
         }
         
         &.visible {
             opacity: 1;
             visibility: visible;
-            min-width: 28rem;
         }
     }
 
@@ -41,7 +44,7 @@
         display: inline-block;
 
         &:not(:last-child){ 
-            margin-right: 3rem;
+            margin-right: 4rem;
         }
 
         &:hover .dropdown__icon {
@@ -62,15 +65,16 @@
     &__link {
         text-decoration: none;
         color: $color-gray;
-        background-color: rgba($color-white,0.3);
         border-radius: 0.5rem;
-        font-size: 1.6rem;
-        font-weight: 600;
         text-transform: uppercase;
         transition: all 0.2s ease-in;
 
         &:hover {
             color: $color-primary;
+        }
+
+        @include respond(tab-land){
+            font-size: 1.6rem;
         }
     }
 
@@ -111,7 +115,8 @@
         transition: all ease-in 0.2s;
 
         @include respond(tab-port){
-            right: 9rem;
+            right: 9rem; 
+            top: 1.5rem;
         }
 
         @include respond(phone){
@@ -135,7 +140,7 @@
     
     &__sticky &__right,
     &__sticky &__menu {
-        top: 0rem;
+        top: 0.5rem;
     }  
 }
 
@@ -191,4 +196,5 @@
     &:hover {transform: scale(1.08);}
 
     @include respond(tab-port) {display: block;}
+
 }

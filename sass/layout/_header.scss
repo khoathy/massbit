@@ -26,7 +26,6 @@
         z-index: 3;
 
         @include respond(tab-land) {
-            width: 35vw;
             left: 8%;
         }
 
@@ -75,7 +74,7 @@
         z-index: 2;
 
         @include respond(tab-land) {
-            width: 55vw;
+            width: 50vw;
             right: 2%;
         }
 
