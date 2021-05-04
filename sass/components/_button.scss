@@ -9,6 +9,7 @@ input[type=submit] {
     border-radius: 7rem;
     -webkit-transition: all 0.2s, border 0.2s, color 0.2s;
     transition:  all 0.2s, border 0.2s, color 0.2s; 
+    box-shadow: 1rem 2rem 5rem rgba($color-blue, 10%);
 }
 
 .btn-full,

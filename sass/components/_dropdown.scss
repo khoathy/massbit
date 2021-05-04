@@ -98,6 +98,10 @@
             padding: 0.7rem 1.5rem 0.7rem 2.5rem;
         }
 
+        &:hover .dropdown__link {
+            color: $color-primary;
+        }
+
         &:hover:before {
             content: "";
             position: absolute;
@@ -118,15 +122,11 @@
         text-transform: unset;
         font-weight: 400;
         text-decoration: none;
-        color: $color-gray;
+        color: $color-gray-dark;
         font-size: 1.6rem;
 
         &:first-letter {
             text-transform: uppercase;
-        }
-
-        &:hover {
-            color: $color-primary;
         }
     }
 }

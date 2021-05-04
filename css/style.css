@@ -223,7 +223,8 @@ body {
   font-weight: 700;
   word-spacing: 0.5rem;
   margin-bottom: 1.6rem;
-  text-align: center; }
+  text-align: center;
+  position: relative; }
   @media only screen and (max-width: 56.25em) {
     .heading-secondary {
       line-height: 1.2;
@@ -315,7 +316,8 @@ input[type=submit] {
   text-decoration: none;
   border-radius: 7rem;
   -webkit-transition: all 0.2s, border 0.2s, color 0.2s;
-  transition: all 0.2s, border 0.2s, color 0.2s; }
+  transition: all 0.2s, border 0.2s, color 0.2s;
+  box-shadow: 1rem 2rem 5rem #a6b2c7; }
 
 .btn-full,
 .btn-full:link,
@@ -478,6 +480,8 @@ input[type=submit]:active {
       .dropdown__item {
         text-align: left;
         padding: 0.7rem 1.5rem 0.7rem 2.5rem; } }
+    .dropdown__item:hover .dropdown__link {
+      color: #2c3acf; }
     .dropdown__item:hover:before {
       content: "";
       position: absolute;
@@ -495,12 +499,10 @@ input[type=submit]:active {
     text-transform: unset;
     font-weight: 400;
     text-decoration: none;
-    color: #505369;
+    color: #24264b;
     font-size: 1.6rem; }
     .dropdown__link:first-letter {
       text-transform: uppercase; }
-    .dropdown__link:hover {
-      color: #2c3acf; }
 
 .row {
   display: flex;
@@ -598,9 +600,9 @@ input[type=submit]:active {
   stroke-linejoin: round;
   stroke-miterlimit: 10; }
 
-#svg__hero .st2 {
+#svg__hero .vase {
   fill: none;
-  stroke: #FCB81F;
+  stroke: #23C479;
   stroke-width: 3;
   stroke-miterlimit: 10; }
 
@@ -642,8 +644,8 @@ input[type=submit]:active {
   stroke-linejoin: round;
   stroke-miterlimit: 10; }
 
-#svg__hero .st10 {
-  fill: #FCB81F; }
+#svg__hero .device {
+  fill: #2c3acf; }
 
 #svg__hero .st11 {
   fill: #F9F1E8; }
@@ -742,7 +744,7 @@ input[type=submit]:active {
   animation: bloom 7s ease-out infinite; }
 
 #svg__outage .outage0 {
-  fill: #DAECFD; }
+  fill: #f1f6ff; }
 
 #svg__outage .outage1 {
   fill: #6BCEC9; }
@@ -761,10 +763,10 @@ input[type=submit]:active {
 
 #svg__outage .outage6,
 #svg__outage .outage-tick {
-  fill: #28E0B0; }
+  fill: #2c52cf; }
 
 #svg__outage .outage7 {
-  fill: #3A3E42; }
+  fill: #313450; }
 
 #svg__outage .outage8 {
   fill: #A6B2C7; }
@@ -1132,7 +1134,7 @@ input[type=submit]:active {
           margin-right: 2rem; } }
   .nav__link {
     text-decoration: none;
-    color: #505369;
+    color: #24264b;
     border-radius: 0.5rem;
     text-transform: uppercase;
     position: relative;
