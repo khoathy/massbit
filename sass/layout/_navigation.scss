@@ -67,7 +67,12 @@
         color: $color-gray;
         border-radius: 0.5rem;
         text-transform: uppercase;
-        transition: all 0.2s ease-in;
+        position: relative;
+        transition: all 0.3s ease-in;
+        -webkit-transition: all 0.3s ease-in;
+        -moz-transition: all 0.3s ease-in;
+        -ms-transition: all 0.3s ease-in;
+        -o-transition: all 0.3s ease-in;
 
         &:hover {
             color: $color-primary;
