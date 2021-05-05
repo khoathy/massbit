@@ -802,13 +802,13 @@ input[type=submit]:active {
   fill: #C1D7E8; }
 
 #svg__mining .mining2 {
-  fill: #FFB51F; }
+  fill: #a2d0fa; }
 
 #svg__mining .mining3 {
-  fill: #EC6D00; }
+  fill: #eef0f7; }
 
-#svg__mining .mining4 {
-  fill: #FCB81F; }
+#svg__mining .mining-coin-4 {
+  fill: #4d71c0; }
 
 #svg__mining .mining5 {
   enable-background: new; }
