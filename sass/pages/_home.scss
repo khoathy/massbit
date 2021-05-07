@@ -54,3 +54,17 @@
     @include respond(tab-port) {padding-bottom: 6rem;}
     @include respond(phone) {padding-bottom: 3rem;}
 }
+
+.section-heading {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+.heading-decor {
+    width: 5rem;
+    display: inline-block;
+    margin-right: 2.5rem;
+    margin-top: 0.5rem;
+
+}

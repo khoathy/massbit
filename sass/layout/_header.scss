@@ -17,7 +17,7 @@
     }
 
     &__textbox {
-        max-width: 38vw;
+        max-width: 35vw;
         width: fit-content;
         position: absolute;
         top: 35%;
@@ -49,9 +49,9 @@
 
         &-text {
             color: $color-gray;
-            margin-top: 3rem;
+            margin-top: 2.5rem;
             font-size: 2rem;
-            line-height: 1.6;
+            line-height: 2;
 
             @include respond(tab-land) {
                 width: 35vw;
@@ -65,11 +65,12 @@
         }
     }
 
+    &__around,
     &__display {
         width: 40vw;
-        max-height: 75vh;
+        height: 65vh;
         position: absolute;
-        bottom: 3.5%;
+        bottom: 5%;
         right: 5%;
         z-index: 2;
 
@@ -88,24 +89,29 @@
         }   
     }
 
-    &__back {
-        position: absolute;
-        width: 100%;
-        height: 100%;
-        background-repeat: no-repeat;
-        background-position: 100% 100%;
-        bottom: 0;
-        background-size: 103%;
-        background-image: url(../img/back.svg);
-        z-index: 0;
+    &__around {
 
-        @include respond(tab-land) {
-            background-size: 110%;
-        }
-
-        @include respond(tab-port) {
-            background-size: cover;
-            height: 60vh;
-        }   
     }
+
+    // &__back {
+    //     position: absolute;
+    //     width: 100%;
+    //     height: 100%;
+    //     background-repeat: no-repeat;
+    //     background-position: 100% 100%;
+    //     bottom: 0;
+    //     right: 2rem;
+    //     background-size: 55%;
+    //     background-image: url(../img/blob-hero.svg);
+    //     z-index: 0;
+
+    //     @include respond(tab-land) {
+    //         background-size: 110%;
+    //     }
+
+    //     @include respond(tab-port) {
+    //         background-size: cover;
+    //         height: 60vh;
+    //     }   
+    // }
 }

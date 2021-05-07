@@ -21,3 +21,27 @@
 .u-shadow {
     box-shadow: 0.5rem 3rem 6rem 0rem rgba($color-primary-dark,0.1);
 }
+
+.u-floatX {
+    animation: floatX infinite 5s ease-in-out;
+    -webkit-animation: floatX infinite 5s ease-in-out;
+    animation-fill-mode: forwards;
+}
+
+.u-floatY {
+    transform-origin: center;
+    animation: floatY infinite 5s ease-in-out;
+    animation-fill-mode: forwards;
+    -webkit-animation: floatY infinite 5s ease-in-out;
+}
+
+.u-spin {
+    transform-origin: center;
+    animation: floatY infinite 5s ease-in-out;
+    animation-fill-mode: forwards;
+    -webkit-animation: spin-2 infinite 5s ease-in-out;
+}
+
+.u-delay {
+    animation-delay: 2s;
+}

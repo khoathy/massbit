@@ -10,7 +10,24 @@
         position: relative;
         display: flex;
         align-items: center;
+
+        &:hover .dropdown__toggle-icon {
+            fill: $color-primary;
+            transform: rotateX(180deg)      ;
+            -webkit-transform: rotateX(180deg)      ;
+            -moz-transform: rotateX(180deg)      ;
+            -ms-transform: rotateX(180deg)      ;
+            -o-transform: rotateX(180deg)      ;
+        }
     }
+
+    &__toggle-icon {
+        transition: all 0.8s ease-in-out    ;
+        -webkit-transition: all 0.8s ease-in-out    ;
+        -moz-transition: all 0.8s ease-in-out    ;
+        -ms-transition: all 0.8s ease-in-out    ;
+        -o-transition: all 0.8s ease-in-out    ;
+}
 
     &__icon {
         width: 1.5rem;
@@ -52,7 +69,6 @@
         -moz-border-radius: 0.5rem;
         -ms-border-radius: 0.5rem;
         -o-border-radius: 0.5rem;
-        transition: all 0.2s;
         transform: rotateX(-25deg) translateZ(0px);
         -webkit-transform: rotateX(-25deg) translateZ(0px);
         -moz-transform: rotateX(-25deg) translateZ(0px);
@@ -74,12 +90,10 @@
             visibility: visible;
             opacity: 1;
             display: block;
-            transform: none;
-            -moz-transform: none;
-            -ms-transform: none;
-            -o-transform: none;
-            -webkit-transform: none;
-        }
+            animation: show 0.5s ease-in-out        ;
+            -webkit-animation: show 0.5s ease-in-out        ;
+            transform-origin: top;
+}
     }
 
     &__item {

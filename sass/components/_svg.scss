@@ -23,15 +23,53 @@
     -webkit-animation: dig-left 1s linear infinite;
             animation: dig-left 1s linear infinite;
 }
-                              
 
+
+//logos around hero
+.svg__outer {
+    width: 5rem;
+    position: absolute;
+
+    .blob {
+            fill:#fff;
+    }
+    .outer-logo {fill:#2c3acf;}
+}
+
+#huobi {
+    right: 10vw;
+    top: 0;
+}
+
+#harmony {
+    right: 45vw;
+    bottom: 15rem;
+}
+
+#gemini {
+    right: 5rem;
+    top: 20rem;
+}
+
+#trust {
+    left: 0;
+    top: -5rem;
+}
+
+#math {
+    left: -10rem;
+    top: 15rem;
+}
+
+//hero
 #svg {
     &__hero {
         .st0 {fill:#23C479;}
         .branch {fill:none;stroke:#3A3E42;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
         .vase {fill:none;stroke:#23C479;stroke-width:3;stroke-miterlimit:10;}
         .st3 {fill:#F95860;}
-        .st4 {fill:#fcfcfc;stroke:#DAEAFF;stroke-width:3;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
+        // .st4 {fill:#fcfcfc;stroke:#DAEAFF;stroke-width:3;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
+        .cloud {fill:white;stroke-width:3;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
         .logo-bg,
         .st5 {fill:#2C3ACF;}
         .st6 {display:none;fill:#2C3ACF;}
@@ -55,13 +93,19 @@
 
         //svg animation
         //floating cloud
-        .st4, 
         .st5, 
         .st16 {
             transform-origin: center;
-            -webkit-animation: float 5s linear infinite;
-                    animation: float 5s linear infinite;
+            animation: float 5s linear infinite;
         }
+
+        .cloud {
+            transform-box: fill-box;
+            transform-origin: center;
+            animation: float 5s linear infinite, spin infinite 15s linear;
+            animation-fill-mode: forwards;
+            -webkit-animation: float 5s linear infinite, spin infinite 15s linear;
+}
 
         //color-changing link
         .st7 {
@@ -102,28 +146,33 @@
         .outage9 {fill:#FCB81F;}
 
         //animation
-        .outage6{
-            -webkit-animation: scale 3s linear infinite;
-                    animation: scale 3s linear infinite;
-            transform-box: fill-box;
-            transform-origin: bottom;
-        }
+//         .outage6{
+//             -webkit-animation: scale  ease-out infinite;
+//             animation: scale 3s ease-out infinite;
+//             transform-box: fill-box;
+//             transform-origin: bottom;
+// }
 
         #drop {
             -webkit-animation: float 1s linear infinite;
-                    animation: float 1s linear infinite;
+            animation: float 1s linear infinite;
         }
 
         #mouth {
             transform-origin: center;
             transform-box: fill-box;
-            -webkit-animation: scale 3s ease-out infinite;
-                    animation: scale 3s ease-out infinite;
-        }
+            transform:scale(0.2);
+            //-webkit-animation: scale 4s ease-out infinite;
+            //animation: scale 4s ease-out infinite;
+            -webkit-transform:scale(0.2);
+            -moz-transform:scale(0.2);
+            -ms-transform:scale(0.2);
+            -o-transform:scale(0.2);
+}        
 
         #slash {
             -webkit-animation: sparkle 1s ease-in-out infinite;
-                    animation: sparkle 1s ease-in-out infinite;
+            animation: sparkle 1s ease-in-out infinite;
             transform-origin: center;
         }
     }
@@ -133,7 +182,7 @@
         .mining1 {fill:#C1D7E8;}
         .mining2 {fill:#a2d0fa;}
         .mining3 {fill:#eef0f7;}
-        .mining-coin-4 {fill:#4d71c0;}
+        .mining-coin-4 {fill:#2C3ACF;}
         .mining5 {enable-background:new;}
         .mining6 {fill:#FFFFFF;}
         .mining7 {fill:#3A3E42;}
@@ -149,16 +198,16 @@
         }
 
         #man-large {
-            -webkit-animation: rotate-left 2s ease-in-out infinite;
+                    -webkit-animation: rotate-left 2s ease-in-out infinite;
                     animation: rotate-left 2s ease-in-out infinite;
-            transform: translate(-19px, 5px);
-            transform-origin: 90% 95%;
-        }
+                    transform: translate(-19px, 5px);
+                    transform-origin: 90% 95%;
+}
 
         #coins path {
-            -webkit-animation: sparkle 2s ease-in-out infinite;
-                    animation: sparkle 2s ease-in-out infinite;
-        }
+                    -webkit-animation: sparkle 4.5s ease-in-out infinite;
+                    animation: sparkle 4.5s ease-in-out infinite;
+}
     }
 
     &__monitor {
