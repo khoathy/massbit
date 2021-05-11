@@ -65,13 +65,15 @@
         }
     }
 
+    &__back,
+    &__fore,
     &__around,
     &__display {
         width: 45vw;
         height: 65vh;
         position: absolute;
         bottom: 5%;
-        right: 3%;
+        right: 4%;
         z-index: 2;
 
         @include respond(tab-land) {
@@ -91,50 +93,59 @@
 
     &__around {
         #huobi {
-            left: -20rem;
+            left: -8rem;
             bottom: 5rem;
         }
         
         #harmony {
             width: 4.5rem;
-            left: -5rem;
-            top: -5rem;
+            right: 5rem;
+            top: 0;
         }
         
         #gemini {
+            width: 6rem;
             right: 20rem;
             top: 7rem;
         }
         
         #trust {
-            right: 5rem;
-            top: -10rem;
+            width: 6.5rem;
+            right: 2rem;
+            bottom: 30rem;
         }
         
         #math {
-            left: -8rem;
-            top: 15rem;
+            left: -4rem;
+            top: 18rem;
             width: 7rem;
         }
 
         #bitfinex {
-            width: 2rem;
-            right: 35rem;
-            top: -8rem;
+            width: 2.5rem;
+            right: 40rem;
+            top: -6rem;
         }
 
         #coinbase {
             width: 2rem;
-            left: 0;
-            bottom: 18rem;
+            left: 5rem;
+            bottom: 22rem;
         }
 
         #gateio {
-            width: 3rem;
-            right: 0;
-            bottom: 30rem;
+            width: 3.5rem;
+            left: 5rem;
+            top: -1rem;
         }
 
+        #uniswap {
+            width: 4rem;
+            right: -4rem;
+            bottom: 10rem;
+        }
+
+        #uniswap,
         #harmony,
         #coinbase,
         #gateio,

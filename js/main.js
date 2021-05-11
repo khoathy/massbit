@@ -7,20 +7,17 @@ $(document).ready(function(){
     var wScroll = $(this).scrollTop();
         
         //parallax header    
-        // if(wScroll <= containerHeight) {
-        //     $('.header__middle-svg').css({
-        //         'transform': 'translate(0%, '+ (wScroll/15) +'%)'
-        //     });
-        //     $('.header__middle').css({
-        //         'transform': 'translate(0%, '+ (wScroll/8) +'%)'
-        //     });
-        //     // $('.header__back').css({
-        //     //     'transform': 'translate(0%, '+ wScroll/17 +'%)'
-        //     // });
-        //     // $('.header__fore').css({
-        //     //     'transform': 'translate(0%, -'+ wScroll/70 +'%)'
-        //     // });
-        // }
+        if(wScroll <= containerHeight) {
+            $('.header__back').css({
+                'transform': 'translate(0%, -'+ (wScroll/25) +'%)'
+            });
+            $('.header__fore').css({
+                'transform': 'translate(0%, -'+ (wScroll/10) +'%)'
+            });
+            // $('.header__middle').css({
+            //     'transform': 'translate(0%, '+ (wScroll/8) +'%)'
+            // });
+        }
        
         // sticky header 
         if(wScroll >= 80){

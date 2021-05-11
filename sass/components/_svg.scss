@@ -15,13 +15,13 @@
 .arrow {
     fill:none;
     stroke:#000000;
-    stroke-width:5;
-    stroke-linecap:round;
-    stroke-linejoin:round;
-    stroke-miterlimit:10;
+    stroke-width: 5;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    stroke-miterlimit: 10;
     transform-origin: center;
     -webkit-animation: dig-left 1s linear infinite;
-            animation: dig-left 1s linear infinite;
+    animation: dig-left 1s linear infinite;
 }
 
 
@@ -31,9 +31,12 @@
     position: absolute;
 
     .blob {
-            fill: transparent;
+        fill: transparent;
     }
+
     .outer-logo {fill:#2c3acf;}
+
+    .outer-logo-2 {fill: #FFFFFF }
 }
 
 //hero
@@ -44,7 +47,7 @@
         .vase {fill:none;stroke:#23C479;stroke-width:3;stroke-miterlimit:10;}
         .st3 {fill:#F95860;}
         // .st4 {fill:#fcfcfc;stroke:#DAEAFF;stroke-width:3;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
-        .cloud {fill:rgba($color-primary-light,0.1);stroke-width:3;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
+        .cloud {fill:rgba($color-primary-light,0.15);stroke-width:3;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
         .logo-bg,
         .st5 {fill:#2C3ACF;}
         .st6 {display:none;fill:#2C3ACF;}
@@ -143,7 +146,7 @@
             -moz-transform:scale(0.2);
             -ms-transform:scale(0.2);
             -o-transform:scale(0.2);
-}        
+        }        
 
         #slash {
             -webkit-animation: sparkle 1s ease-in-out infinite;
@@ -177,12 +180,12 @@
                     animation: rotate-left 2s ease-in-out infinite;
                     transform: translate(-19px, 5px);
                     transform-origin: 90% 95%;
-}
+        }
 
         #coins path {
                     -webkit-animation: sparkle 4.5s ease-in-out infinite;
                     animation: sparkle 4.5s ease-in-out infinite;
-}
+        }
     }
 
     &__monitor {

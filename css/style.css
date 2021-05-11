@@ -12,6 +12,26 @@
 /*
 COLORS:
 */
+@keyframes scrollUp {
+  0%, 22.5% {
+    transform: translate3d(0, 0, 0);
+    -webkit-transform: translate3d(0, 0, 0);
+    -moz-transform: translate3d(0, 0, 0);
+    -ms-transform: translate3d(0, 0, 0);
+    -o-transform: translate3d(0, 0, 0); }
+  27.5%, 72.5% {
+    transform: translate3d(0, -33.3%, 0);
+    -webkit-transform: translate3d(0, -33.3%, 0);
+    -moz-transform: translate3d(0, -33.3%, 0);
+    -ms-transform: translate3d(0, -33.3%, 0);
+    -o-transform: translate3d(0, -33.3%, 0); }
+  77.5%, 100% {
+    transform: translate3d(0, -66.6%, 0);
+    -webkit-transform: translate3d(0, -66.6%, 0);
+    -moz-transform: translate3d(0, -66.6%, 0);
+    -ms-transform: translate3d(0, -66.6%, 0);
+    -o-transform: translate3d(0, -66.6%, 0); } }
+
 @-webkit-keyframes flash {
   0% {
     stroke: #f95860; }
@@ -390,6 +410,34 @@ body {
 .u-delay {
   animation-delay: -2s; }
 
+.scrollerY {
+  height: 6.5rem;
+  min-width: 50rem;
+  overflow: hidden;
+  position: relative; }
+  .scrollerY::before {
+    top: 0;
+    left: 0;
+    z-index: 1;
+    width: 100%;
+    content: '';
+    height: 1rem;
+    position: absolute;
+    background: linear-gradient(180deg, #f1f6ff, rgba(255, 255, 255, 0)); }
+  .scrollerY::after {
+    left: 0;
+    bottom: 0;
+    z-index: 1;
+    width: 100%;
+    content: '';
+    height: 1rem;
+    position: absolute;
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0), #f1f6ff); }
+  .scrollerY-list {
+    list-style: none;
+    animation: scrollUp 6s infinite ease-in-out forwards;
+    -webkit-animation: scrollUp 6s infinite ease-in-out forwards; }
+
 .btn,
 .btn:link,
 .btn:visited,
@@ -501,11 +549,11 @@ input[type=submit]:active {
       -ms-transform: rotateX(180deg);
       -o-transform: rotateX(180deg); }
   .dropdown__toggle-icon {
-    transition: all 0.8s ease-in-out;
-    -webkit-transition: all 0.8s ease-in-out;
-    -moz-transition: all 0.8s ease-in-out;
-    -ms-transition: all 0.8s ease-in-out;
-    -o-transition: all 0.8s ease-in-out; }
+    transition: all 0.2s ease-in-out;
+    -webkit-transition: all 0.2s ease-in-out;
+    -moz-transition: all 0.2s ease-in-out;
+    -ms-transition: all 0.2s ease-in-out;
+    -o-transition: all 0.2s ease-in-out; }
   .dropdown__icon {
     width: 1.5rem;
     margin-right: 1rem;
@@ -557,8 +605,8 @@ input[type=submit]:active {
       visibility: visible;
       opacity: 1;
       display: block;
-      animation: show 0.5s ease-in-out;
-      -webkit-animation: show 0.5s ease-in-out;
+      animation: show 0.3s ease-in-out;
+      -webkit-animation: show 0.3s ease-in-out;
       transform-origin: top; }
   .dropdown__item {
     list-style: none;
@@ -688,6 +736,8 @@ input[type=submit]:active {
     fill: transparent; }
   .svg__outer .outer-logo {
     fill: #2c3acf; }
+  .svg__outer .outer-logo-2 {
+    fill: #FFFFFF; }
 
 #svg__hero .st0 {
   fill: #23C479; }
@@ -710,7 +760,7 @@ input[type=submit]:active {
   fill: #F95860; }
 
 #svg__hero .cloud {
-  fill: rgba(134, 165, 252, 0.1);
+  fill: rgba(134, 165, 252, 0.15);
   stroke-width: 3;
   stroke-linecap: round;
   stroke-linejoin: round;
@@ -1146,19 +1196,19 @@ input[type=submit]:active {
           width: 100%;
           margin: 3rem auto 0;
           font-size: 2rem; } }
-  .header__around, .header__display {
+  .header__back, .header__fore, .header__around, .header__display {
     width: 45vw;
     height: 65vh;
     position: absolute;
     bottom: 5%;
-    right: 3%;
+    right: 4%;
     z-index: 2; }
     @media only screen and (max-width: 75em) {
-      .header__around, .header__display {
+      .header__back, .header__fore, .header__around, .header__display {
         width: 50vw;
         right: 2%; } }
     @media only screen and (max-width: 56.25em) {
-      .header__around, .header__display {
+      .header__back, .header__fore, .header__around, .header__display {
         max-height: 50vh;
         max-width: 90vw;
         width: auto;
@@ -1166,34 +1216,41 @@ input[type=submit]:active {
         margin: 0 auto;
         position: static; } }
   .header__around #huobi {
-    left: -20rem;
+    left: -8rem;
     bottom: 5rem; }
   .header__around #harmony {
     width: 4.5rem;
-    left: -5rem;
-    top: -5rem; }
+    right: 5rem;
+    top: 0; }
   .header__around #gemini {
+    width: 6rem;
     right: 20rem;
     top: 7rem; }
   .header__around #trust {
-    right: 5rem;
-    top: -10rem; }
+    width: 6.5rem;
+    right: 2rem;
+    bottom: 30rem; }
   .header__around #math {
-    left: -8rem;
-    top: 15rem;
+    left: -4rem;
+    top: 18rem;
     width: 7rem; }
   .header__around #bitfinex {
-    width: 2rem;
-    right: 35rem;
-    top: -8rem; }
+    width: 2.5rem;
+    right: 40rem;
+    top: -6rem; }
   .header__around #coinbase {
     width: 2rem;
-    left: 0;
-    bottom: 18rem; }
+    left: 5rem;
+    bottom: 22rem; }
   .header__around #gateio {
-    width: 3rem;
-    right: 0;
-    bottom: 30rem; }
+    width: 3.5rem;
+    left: 5rem;
+    top: -1rem; }
+  .header__around #uniswap {
+    width: 4rem;
+    right: -4rem;
+    bottom: 10rem; }
+  .header__around #uniswap,
   .header__around #harmony,
   .header__around #coinbase,
   .header__around #gateio,
