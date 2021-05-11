@@ -388,7 +388,7 @@ body {
   -webkit-animation: spin-2 infinite 5s ease-in-out; }
 
 .u-delay {
-  animation-delay: 2s; }
+  animation-delay: -2s; }
 
 .btn,
 .btn:link,
@@ -682,32 +682,12 @@ input[type=submit]:active {
   animation: dig-left 1s linear infinite; }
 
 .svg__outer {
-  width: 5rem;
+  width: 5.5rem;
   position: absolute; }
   .svg__outer .blob {
-    fill: #fff; }
+    fill: transparent; }
   .svg__outer .outer-logo {
     fill: #2c3acf; }
-
-#huobi {
-  right: 10vw;
-  top: 0; }
-
-#harmony {
-  right: 45vw;
-  bottom: 15rem; }
-
-#gemini {
-  right: 5rem;
-  top: 20rem; }
-
-#trust {
-  left: 0;
-  top: -5rem; }
-
-#math {
-  left: -10rem;
-  top: 15rem; }
 
 #svg__hero .st0 {
   fill: #23C479; }
@@ -730,7 +710,7 @@ input[type=submit]:active {
   fill: #F95860; }
 
 #svg__hero .cloud {
-  fill: white;
+  fill: rgba(134, 165, 252, 0.1);
   stroke-width: 3;
   stroke-linecap: round;
   stroke-linejoin: round;
@@ -1129,7 +1109,7 @@ input[type=submit]:active {
       height: 100vh;
       padding-top: 12rem; } }
   .header__textbox {
-    max-width: 35vw;
+    max-width: 30vw;
     width: fit-content;
     position: absolute;
     top: 35%;
@@ -1167,11 +1147,11 @@ input[type=submit]:active {
           margin: 3rem auto 0;
           font-size: 2rem; } }
   .header__around, .header__display {
-    width: 40vw;
+    width: 45vw;
     height: 65vh;
     position: absolute;
     bottom: 5%;
-    right: 5%;
+    right: 3%;
     z-index: 2; }
     @media only screen and (max-width: 75em) {
       .header__around, .header__display {
@@ -1185,6 +1165,40 @@ input[type=submit]:active {
         bottom: auto;
         margin: 0 auto;
         position: static; } }
+  .header__around #huobi {
+    left: -20rem;
+    bottom: 5rem; }
+  .header__around #harmony {
+    width: 4.5rem;
+    left: -5rem;
+    top: -5rem; }
+  .header__around #gemini {
+    right: 20rem;
+    top: 7rem; }
+  .header__around #trust {
+    right: 5rem;
+    top: -10rem; }
+  .header__around #math {
+    left: -8rem;
+    top: 15rem;
+    width: 7rem; }
+  .header__around #bitfinex {
+    width: 2rem;
+    right: 35rem;
+    top: -8rem; }
+  .header__around #coinbase {
+    width: 2rem;
+    left: 0;
+    bottom: 18rem; }
+  .header__around #gateio {
+    width: 3rem;
+    right: 0;
+    bottom: 30rem; }
+  .header__around #harmony,
+  .header__around #coinbase,
+  .header__around #gateio,
+  .header__around #bitfinex {
+    opacity: 0.2; }
 
 .nav {
   height: 5.5rem;

@@ -27,38 +27,13 @@
 
 //logos around hero
 .svg__outer {
-    width: 5rem;
+    width: 5.5rem;
     position: absolute;
 
     .blob {
-            fill:#fff;
+            fill: transparent;
     }
     .outer-logo {fill:#2c3acf;}
-}
-
-#huobi {
-    right: 10vw;
-    top: 0;
-}
-
-#harmony {
-    right: 45vw;
-    bottom: 15rem;
-}
-
-#gemini {
-    right: 5rem;
-    top: 20rem;
-}
-
-#trust {
-    left: 0;
-    top: -5rem;
-}
-
-#math {
-    left: -10rem;
-    top: 15rem;
 }
 
 //hero
@@ -69,7 +44,7 @@
         .vase {fill:none;stroke:#23C479;stroke-width:3;stroke-miterlimit:10;}
         .st3 {fill:#F95860;}
         // .st4 {fill:#fcfcfc;stroke:#DAEAFF;stroke-width:3;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
-        .cloud {fill:white;stroke-width:3;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
+        .cloud {fill:rgba($color-primary-light,0.1);stroke-width:3;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
         .logo-bg,
         .st5 {fill:#2C3ACF;}
         .st6 {display:none;fill:#2C3ACF;}
