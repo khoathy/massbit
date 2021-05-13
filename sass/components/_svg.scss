@@ -27,8 +27,12 @@
 
 //logos around hero
 .svg__outer {
-    width: 5.5rem;
+    width: 6.5rem;
     position: absolute;
+    @include respond(tab-land) {
+        width: 0;
+    }
+
 
     .blob {
         fill: transparent;
@@ -36,8 +40,13 @@
 
     .outer-logo {fill:#2c3acf;}
 
-    .outer-logo-2 {fill: #FFFFFF }
+    .outer-logo-2 {fill: #ffffff }
 }
+
+//hero blob
+    #spotlight {
+        fill:#f5faff;
+    }
 
 //hero
 #svg {
@@ -47,7 +56,7 @@
         .vase {fill:none;stroke:#23C479;stroke-width:3;stroke-miterlimit:10;}
         .st3 {fill:#F95860;}
         // .st4 {fill:#fcfcfc;stroke:#DAEAFF;stroke-width:3;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
-        .cloud {fill:rgba($color-primary-light,0.15);stroke-width:3;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
+        .cloud {fill:rgba(#e3ebfc,0.8);stroke-width:3;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
         .logo-bg,
         .st5 {fill:#2C3ACF;}
         .st6 {display:none;fill:#2C3ACF;}

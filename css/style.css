@@ -415,6 +415,12 @@ body {
   min-width: 50rem;
   overflow: hidden;
   position: relative; }
+  @media only screen and (max-width: 75em) {
+    .scrollerY {
+      height: 5.5rem; } }
+  @media only screen and (max-width: 37.5em) {
+    .scrollerY {
+      height: 4.5rem; } }
   .scrollerY::before {
     top: 0;
     left: 0;
@@ -730,14 +736,20 @@ input[type=submit]:active {
   animation: dig-left 1s linear infinite; }
 
 .svg__outer {
-  width: 5.5rem;
+  width: 6.5rem;
   position: absolute; }
+  @media only screen and (max-width: 75em) {
+    .svg__outer {
+      width: 0; } }
   .svg__outer .blob {
     fill: transparent; }
   .svg__outer .outer-logo {
     fill: #2c3acf; }
   .svg__outer .outer-logo-2 {
-    fill: #FFFFFF; }
+    fill: #ffffff; }
+
+#spotlight {
+  fill: #f5faff; }
 
 #svg__hero .st0 {
   fill: #23C479; }
@@ -760,7 +772,7 @@ input[type=submit]:active {
   fill: #F95860; }
 
 #svg__hero .cloud {
-  fill: rgba(134, 165, 252, 0.15);
+  fill: rgba(227, 235, 252, 0.8);
   stroke-width: 3;
   stroke-linecap: round;
   stroke-linejoin: round;
@@ -1196,66 +1208,93 @@ input[type=submit]:active {
           width: 100%;
           margin: 3rem auto 0;
           font-size: 2rem; } }
-  .header__back, .header__fore, .header__around, .header__display {
+  .header__spotlight, .header__back, .header__fore, .header__around, .header__display {
     width: 45vw;
     height: 65vh;
     position: absolute;
-    bottom: 5%;
+    bottom: 4rem;
     right: 4%;
     z-index: 2; }
     @media only screen and (max-width: 75em) {
-      .header__back, .header__fore, .header__around, .header__display {
-        width: 50vw;
-        right: 2%; } }
+      .header__spotlight, .header__back, .header__fore, .header__around, .header__display {
+        width: 55vw;
+        right: 0; } }
     @media only screen and (max-width: 56.25em) {
-      .header__back, .header__fore, .header__around, .header__display {
-        max-height: 50vh;
-        max-width: 90vw;
-        width: auto;
+      .header__spotlight, .header__back, .header__fore, .header__around, .header__display {
+        height: auto;
+        width: 70vw;
+        max-height: 45vh;
         bottom: auto;
         margin: 0 auto;
         position: static; } }
+  @media only screen and (max-width: 56.25em) {
+    .header__around .header__spotlight,
+    .header__around .header__fore,
+    .header__around .header__back {
+      display: none; } }
   .header__around #huobi {
     left: -8rem;
-    bottom: 5rem; }
+    bottom: 3rem; }
   .header__around #harmony {
     width: 4.5rem;
     right: 5rem;
     top: 0; }
-  .header__around #gemini {
-    width: 6rem;
-    right: 20rem;
-    top: 7rem; }
-  .header__around #trust {
-    width: 6.5rem;
+  .header__around #uniswap {
+    width: 5rem;
     right: 2rem;
-    bottom: 30rem; }
+    bottom: 28rem;
+    opacity: 0.9; }
+  .header__around #trust {
+    right: 18rem;
+    top: 9rem; }
   .header__around #math {
     left: -4rem;
     top: 18rem;
-    width: 7rem; }
+    width: 7.5rem; }
   .header__around #bitfinex {
     width: 2.5rem;
     right: 40rem;
     top: -6rem; }
+    @media only screen and (max-width: 75em) {
+      .header__around #bitfinex {
+        right: 20vw;
+        top: 0; } }
   .header__around #coinbase {
     width: 2rem;
     left: 5rem;
-    bottom: 22rem; }
+    bottom: 20rem; }
   .header__around #gateio {
     width: 3.5rem;
-    left: 5rem;
+    left: 8rem;
     top: -1rem; }
-  .header__around #uniswap {
-    width: 4rem;
+  .header__around #gemini {
+    width: 6rem;
     right: -4rem;
-    bottom: 10rem; }
-  .header__around #uniswap,
+    bottom: 8rem; }
+    @media only screen and (max-width: 75em) {
+      .header__around #gemini {
+        right: -6rem; } }
+  .header__around #balancer {
+    width: 5rem;
+    left: 10rem;
+    bottom: -16rem; }
+  .header__around #balancer,
+  .header__around #gemini,
   .header__around #harmony,
   .header__around #coinbase,
   .header__around #gateio,
   .header__around #bitfinex {
     opacity: 0.2; }
+  .header__around #spotlight {
+    fill: #f7faff; }
+  .header__spotlight {
+    opacity: 0.7;
+    height: 75vh;
+    bottom: 0;
+    right: 6rem; }
+    @media only screen and (max-width: 75em) {
+      .header__spotlight {
+        right: 1rem; } }
 
 .nav {
   height: 5.5rem;
