@@ -298,3 +298,24 @@
 }
 }
 
+//dropper animation
+@keyframes juggler {
+    5% {
+        opacity: 0;
+    }
+    15% {
+        opacity: 1;
+        transform: translate3d(0px, -15rem, 0px);
+        -webkit-transform: translate3d(0px, -15rem, 0px);
+        -moz-transform: translate3d(0px, -15rem, 0px);
+        -ms-transform: translate3d(0px, -15rem, 0px);
+        -o-transform: translate3d(0px, -15rem, 0px);
+    }
+    90% {
+        transform: translate3d(0px, 15rem, 0px);
+        -webkit-transform: translate3d(0px, 15rem, 0px);
+        -moz-transform: translate3d(0px, 15rem, 0px);
+        -ms-transform: translate3d(0px, 15rem, 0px);
+        -o-transform: translate3d(0px, 15rem, 0px);
+    }   
+}

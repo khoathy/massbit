@@ -20,8 +20,8 @@
         max-width: 30vw;
         width: fit-content;
         position: absolute;
-        top: 35%;
-        left: 12%;
+        top: 33%;
+        left: 10%;
         transform: translateZ(0);
         z-index: 3;
 
@@ -86,7 +86,7 @@
             // max-height: 50vh;
             // max-width: 90vw;
             height: auto;
-            width: 70vw;
+            width: 65vw;
             max-height: 45vh;
             bottom: auto;
             margin: 0 auto;
@@ -106,6 +106,7 @@
         #huobi {
             left: -8rem;
             bottom: 3rem;
+            opacity: 0.9;
         }
         
         #harmony {
@@ -128,7 +129,7 @@
         
         #math {
             left: -4rem;
-            top: 18rem;
+            top: 20rem;
             width: 7.5rem;
         }
 
