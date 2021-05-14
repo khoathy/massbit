@@ -28,8 +28,14 @@
     animation-fill-mode: forwards;
 }
 
-.u-floatY {
+.u-floatY,
+.u-spinY {
+    transform-box: fill-box;
     transform-origin: center;
+    animation-fill-mode: forwards;
+}
+
+.u-floatY {
     animation: floatY infinite 5s ease-in-out;
     animation-fill-mode: forwards;
     -webkit-animation: floatY infinite 5s ease-in-out;
@@ -40,6 +46,11 @@
     animation: floatY infinite 5s ease-in-out;
     animation-fill-mode: forwards;
     -webkit-animation: spin-2 infinite 5s ease-in-out;
+}
+
+.u-spinY {
+    animation: spinY infinite 2s;
+    -webkit-animation: spinY infinite 2s;
 }
 
 .u-delay {

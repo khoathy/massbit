@@ -192,6 +192,20 @@ COLORS:
     -ms-transform: rotate(360deg);
     -o-transform: rotate(360deg); } }
 
+@keyframes spinY {
+  0% {
+    transform: rotateY(0deg);
+    -webkit-transform: rotateY(0deg);
+    -moz-transform: rotateY(0deg);
+    -ms-transform: rotateY(0deg);
+    -o-transform: rotateY(0deg); }
+  100% {
+    transform: rotateY(360deg);
+    -webkit-transform: rotateY(360deg);
+    -moz-transform: rotateY(360deg);
+    -ms-transform: rotateY(360deg);
+    -o-transform: rotateY(360deg); } }
+
 @keyframes spin-2 {
   0% {
     transform: rotate(-90deg);
@@ -211,6 +225,22 @@ COLORS:
     -moz-transform: rotate(-90deg);
     -ms-transform: rotate(-90deg);
     -o-transform: rotate(-90deg); } }
+
+@keyframes spin-3 {
+  0%, 15% {
+    transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    -o-transform: rotate(0deg); }
+  25%, 40% {
+    transform: rotate(90deg); }
+  50%, 65% {
+    transform: rotate(180deg); }
+  75%, 90% {
+    transform: rotate(270deg); }
+  100% {
+    transform: rotate(360deg); } }
 
 @keyframes floatY {
   0%, 100% {
@@ -306,7 +336,7 @@ body {
   font-size: 4rem;
   font-weight: 700;
   word-spacing: 0.5rem;
-  margin-bottom: 1.6rem;
+  margin-bottom: 4rem;
   text-align: center;
   position: relative; }
   @media only screen and (max-width: 56.25em) {
@@ -395,8 +425,13 @@ body {
   -webkit-animation: floatX infinite 5s ease-in-out;
   animation-fill-mode: forwards; }
 
-.u-floatY {
+.u-floatY,
+.u-spinY {
+  transform-box: fill-box;
   transform-origin: center;
+  animation-fill-mode: forwards; }
+
+.u-floatY {
   animation: floatY infinite 5s ease-in-out;
   animation-fill-mode: forwards;
   -webkit-animation: floatY infinite 5s ease-in-out; }
@@ -406,6 +441,10 @@ body {
   animation: floatY infinite 5s ease-in-out;
   animation-fill-mode: forwards;
   -webkit-animation: spin-2 infinite 5s ease-in-out; }
+
+.u-spinY {
+  animation: spinY infinite 2s;
+  -webkit-animation: spinY infinite 2s; }
 
 .u-delay {
   animation-delay: -2s; }
@@ -959,39 +998,30 @@ input[type=submit]:active {
   transform-origin: center; }
 
 #svg__mining .mining0 {
-  fill: #DAECFD; }
-
-#svg__mining .mining1 {
   fill: #C1D7E8; }
 
+#svg__mining .mining1 {
+  fill: #A2D0FA; }
+
 #svg__mining .mining2 {
-  fill: #a2d0fa; }
+  fill: #EEF0F7; }
 
 #svg__mining .mining3 {
-  fill: #eef0f7; }
-
-#svg__mining .mining-coin-4 {
   fill: #2C3ACF; }
 
-#svg__mining .mining5 {
-  enable-background: new; }
-
-#svg__mining .mining6 {
+#svg__mining .mining4 {
   fill: #FFFFFF; }
 
-#svg__mining .mining7 {
+#svg__mining .mining5 {
   fill: #3A3E42; }
 
-#svg__mining .mining8 {
+#svg__mining .mining6 {
   fill: #4051CC; }
 
-#svg__mining .mining9 {
+#svg__mining .mining7 {
   fill: #F4F4F4; }
 
-#svg__mining .mining10 {
-  fill: #2C3ACF; }
-
-#svg__mining .mining11 {
+#svg__mining .mining8 {
   fill: #A6B2C7; }
 
 #svg__mining #top {
@@ -1001,8 +1031,15 @@ input[type=submit]:active {
 #svg__mining #man-large {
   -webkit-animation: rotate-left 2s ease-in-out infinite;
   animation: rotate-left 2s ease-in-out infinite;
-  transform: translate(-19px, 5px);
-  transform-origin: 90% 95%; }
+  transform: translate(-2px, 5px);
+  transform-origin: 90% 95%;
+  -webkit-transform: translate(-2px, 5px);
+  -moz-transform: translate(-2px, 5px);
+  -ms-transform: translate(-2px, 5px);
+  -o-transform: translate(-2px, 5px); }
+
+#svg__mining #coin-m {
+  transform: translate(-2px, 5px); }
 
 #svg__mining #coins path {
   -webkit-animation: sparkle 4.5s ease-in-out infinite;
@@ -1123,32 +1160,32 @@ input[type=submit]:active {
   left: 0;
   right: 0; }
   .svg-divider--1 {
-    height: 1rem;
-    top: -1rem;
+    height: 2rem;
+    top: -2rem;
     fill: #fff; }
     @media only screen and (max-width: 37.5em) {
       .svg-divider--1 {
         height: 0;
         top: 0; } }
   .svg-divider--2 {
-    height: 3rem;
-    top: -3rem;
+    height: 6rem;
+    top: -6rem;
     fill: #f1f6ff; }
     @media only screen and (max-width: 37.5em) {
       .svg-divider--2 {
         height: 2rem;
         top: -2rem; } }
   .svg-divider--3 {
-    height: 3rem;
-    top: -3rem;
+    height: 6rem;
+    top: -6rem;
     fill: #fff; }
     @media only screen and (max-width: 37.5em) {
       .svg-divider--3 {
         height: 2rem;
         top: -2rem; } }
   .svg-divider--footer {
-    height: 2.5rem;
-    bottom: -2.3rem;
+    height: 3.5rem;
+    bottom: -3.3rem;
     fill: #fff; }
     @media only screen and (max-width: 37.5em) {
       .svg-divider--footer {
@@ -1212,7 +1249,7 @@ input[type=submit]:active {
     width: 45vw;
     height: 65vh;
     position: absolute;
-    bottom: 4rem;
+    bottom: 6rem;
     right: 4%;
     z-index: 2; }
     @media only screen and (max-width: 75em) {
@@ -1549,7 +1586,7 @@ input[type=submit]:active {
 .section-funding,
 .section-experience {
   position: relative;
-  padding: 6rem 15rem; }
+  padding: 10rem 15rem; }
   @media only screen and (max-width: 75em) {
     .section-about,
     .section-platform,
@@ -1607,7 +1644,7 @@ input[type=submit]:active {
 
 .section-funding,
 .section-experience {
-  padding-bottom: 10rem; }
+  padding-bottom: 15rem; }
   @media only screen and (max-width: 56.25em) {
     .section-funding,
     .section-experience {
@@ -1626,4 +1663,4 @@ input[type=submit]:active {
   width: 5rem;
   display: inline-block;
   margin-right: 2.5rem;
-  margin-top: 0.5rem; }
+  margin-top: 1rem; }

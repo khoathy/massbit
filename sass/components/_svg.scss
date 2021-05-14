@@ -165,18 +165,15 @@
     }
 
     &__mining {
-        .mining0 {fill:#DAECFD;}
-        .mining1 {fill:#C1D7E8;}
-        .mining2 {fill:#a2d0fa;}
-        .mining3 {fill:#eef0f7;}
-        .mining-coin-4 {fill:#2C3ACF;}
-        .mining5 {enable-background:new;}
-        .mining6 {fill:#FFFFFF;}
-        .mining7 {fill:#3A3E42;}
-        .mining8 {fill:#4051CC;}
-        .mining9 {fill:#F4F4F4;}
-        .mining10 {fill:#2C3ACF;}
-        .mining11 {fill:#A6B2C7;}
+        .mining0{fill:#C1D7E8;}
+        .mining1{fill:#A2D0FA;}
+        .mining2{fill:#EEF0F7;}
+        .mining3{fill:#2C3ACF;}
+        .mining4{fill:#FFFFFF;}
+        .mining5{fill:#3A3E42;}
+        .mining6{fill:#4051CC;}
+        .mining7{fill:#F4F4F4;}
+        .mining8{fill:#A6B2C7;}
 
         //animation
         #top {
@@ -187,8 +184,16 @@
         #man-large {
                     -webkit-animation: rotate-left 2s ease-in-out infinite;
                     animation: rotate-left 2s ease-in-out infinite;
-                    transform: translate(-19px, 5px);
+                    transform: translate(-2px, 5px);
                     transform-origin: 90% 95%;
+                    -webkit-transform: translate(-2px, 5px);
+                    -moz-transform: translate(-2px, 5px);
+                    -ms-transform: translate(-2px, 5px);
+                    -o-transform: translate(-2px, 5px);
+        }
+
+        #coin-m {
+            transform: translate(-2px, 5px);
         }
 
         #coins path {
