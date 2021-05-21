@@ -33,7 +33,7 @@
     0%   {transform: translateY(0) scale(1)}
     25%  {transform: translateY(-2px)}
     50%  {transform: scale(1.005);}
-    75%  {transform: translateY(8px);}
+    75%  { transform: translateY(1rem); -webkit-transform: translateY(1rem); -moz-transform: translateY(1rem); -ms-transform: translateY(1rem); -o-transform: translateY(1rem); }
     100% {transform: translateY(0)}
 }
   
@@ -227,26 +227,26 @@
 
 @keyframes spin-2 {
     0% {
-        transform: rotate(-90deg);
-        -webkit-transform: rotate(-90deg);
-        -moz-transform: rotate(-90deg);
-        -ms-transform: rotate(-90deg);
-        -o-transform: rotate(-90deg);
-    }
+        transform: rotate(-170deg);
+        -webkit-transform: rotate(-170deg);
+        -moz-transform: rotate(-170deg);
+        -ms-transform: rotate(-170deg);
+        -o-transform: rotate(-170deg);
+}
     50% {
-        transform: rotate(90deg);
-        -webkit-transform: rotate(90deg);
-        -moz-transform: rotate(90deg);
-        -ms-transform: rotate(90deg);
-        -o-transform: rotate(90deg);
-    }
+        transform: rotate(170deg);
+        -webkit-transform: rotate(170deg);
+        -moz-transform: rotate(170deg);
+        -ms-transform: rotate(170deg);
+        -o-transform: rotate(170deg);
+}
     100% {
-        transform: rotate(-90deg);
-        -webkit-transform: rotate(-90deg);
-        -moz-transform: rotate(-90deg);
-        -ms-transform: rotate(-90deg);
-        -o-transform: rotate(-90deg);
-    }
+        transform: rotate(-170deg);
+        -webkit-transform: rotate(-170deg);
+        -moz-transform: rotate(-170deg);
+        -ms-transform: rotate(-170deg);
+        -o-transform: rotate(-170deg);
+}
 }
 
 @keyframes spin-3 {
@@ -301,10 +301,10 @@
 //dropper animation
 @keyframes juggler {
     5% {
-        opacity: 0;
+        // opacity: 0;
     }
     15% {
-        opacity: 1;
+        // opacity: 1;
         transform: translate3d(0px, -15rem, 0px);
         -webkit-transform: translate3d(0px, -15rem, 0px);
         -moz-transform: translate3d(0px, -15rem, 0px);

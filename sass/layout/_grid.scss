@@ -48,8 +48,8 @@
     }
 
 
-    .col-1-of-5 {
-        width: calc(100% / 5);
+    .col-1-of-6 {
+        width: calc(100% / 7);
         @include respond(tab-port) {
             width: calc(100%/4)!important;   
         }
@@ -58,8 +58,8 @@
         }
     }
 
-    .col-2-of-5 {
-        width: calc(2 * (100% / 5));
+    .col-2-of-6 {
+        width: calc(2 * (100% / 7));
         text-align: left;
         @include respond(phone) {
             width: calc(2 * 100%/3)!important;  

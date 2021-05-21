@@ -96,18 +96,18 @@
 
         //color-changing link
         .st7 {
-            stroke: #23C479;
-            -webkit-animation: flash 3.5s ease-in-out infinite;
-                    animation: flash 3.5s ease-in-out infinite;
-        }
+                    stroke: #23C479;
+                    -webkit-animation: flash 2.5s ease-in-out infinite;
+                    animation: flash 2.5s ease-in-out infinite;
+}
 
         //dashing link
         .st8 {
-            stroke-dasharray: 0;
-            stroke-dashoffset: 0;
-            -webkit-animation: dash 3.5s linear infinite;
-                    animation: dash 3.5s linear infinite;
-        }
+                    stroke-dasharray: 0;
+                    stroke-dashoffset: 0;
+                    -webkit-animation: dash 2s linear infinite;
+                    animation: dash 2s linear infinite;
+}
 
         //logo plant
         #plant-1,
@@ -197,9 +197,9 @@
         }
 
         #coins path {
-                    -webkit-animation: sparkle 4.5s ease-in-out infinite;
-                    animation: sparkle 4.5s ease-in-out infinite;
-        }
+                    -webkit-animation: sparkle 3.5s ease-in-out infinite ;
+                    animation: sparkle 3.5s ease-in-out infinite ;
+}
     }
 
     &__monitor {

@@ -104,7 +104,8 @@
         }
 
         #huobi {
-            left: -8rem;
+            width: 5.5rem;
+            left: -6rem;
             bottom: 3rem;
             opacity: 0.9;
         }
@@ -191,6 +192,7 @@
         height: 75vh;
         bottom: 0;
         right: 6rem;
+        
         @include respond(tab-land) {
             right: 1rem;
         }   

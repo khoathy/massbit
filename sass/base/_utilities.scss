@@ -43,7 +43,7 @@
 
 .u-spin {
     transform-origin: center;
-    animation: floatY infinite 5s ease-in-out;
+    animation: spin-2 infinite 5s ease-in-out;
     animation-fill-mode: forwards;
     -webkit-animation: spin-2 infinite 5s ease-in-out;
 }
